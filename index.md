@@ -31,7 +31,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 ## 个人论坛、公众号、微博等
 
 - [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php)（活跃中）
-- kuing撸题精选（微信公众号：kuinglululu）（不太更新）
+- kuing 撸题精选（微信公众号：kuinglululu）（不太更新）
 - [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
 - [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
 - [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)（已丢荒）
@@ -103,7 +103,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 ### 18+
 
 - [fc2club.com](https://fc2club.com)
-- [P 站](https://www.pornhub.com)
+- [P站](https://www.pornhub.com)
 - [xvideos](https://www.xvideos.com)
 - [比思論壇 - 求檔區](http://bi-si11.xyz/forum-50-2.html)
 - [AV女優名 変換君](http://etigoya955.blog49.fc2.com)
