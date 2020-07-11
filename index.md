@@ -9,9 +9,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 ## 喜好
 
 - 妹纸——特别是：胖妹纸
-
 - 数学——主要是初等数学——特别是：不等式
-
 - LaTeX
 
 也就是我常说的：撸片撸题撸代码
@@ -28,8 +26,6 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 - [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
 - [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
 - [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)（已丢荒）
-
-
 
 ## 作品
 
@@ -79,6 +75,10 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 - [Overleaf（在线 LaTeX）](https://www.overleaf.com)
 - [Detexify（手写查找符号代码）](http://detexify.kirelabs.org/classify.html)
+
+### 其他
+
+- [在线文本比较](http://www.jq22.com/textDifference)
 
 <!--
 
