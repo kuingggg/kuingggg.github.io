@@ -30,7 +30,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ## 个人论坛、公众号、微博等
 
-- [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php)（活跃中）
+- [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php){:target="_blank"}（活跃中）
 - kuing 撸题精选（微信公众号：kuinglululu）（不太更新）
 - [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
 - [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
