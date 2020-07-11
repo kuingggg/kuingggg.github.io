@@ -24,10 +24,12 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ## 论坛、微博、博客等
 
-- [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php)
-- [kuing 的新浪微博](https://weibo.com/kkkkuing)
-- [kuing's blog in is-programmer](http://kuing.is-programmer.com)
-- [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)
+- [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php)（活跃中）
+- [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
+- [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
+- [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)（已丢荒）
+
+
 
 ## 作品
 
@@ -45,7 +47,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 |  To Do  | 完成度 | 重要度 | 紧急度 | 难度 | 备注 | 
 |  ----  | ----  | ----  | ----  | ----  | ----  |
-| 整理片片 | 小部分 | 非常重要 | 小急 | 困难 | 需寻找好用的软件 |
+| 整理片片 | 小部分 | 非常重要 | 小急 | 困难 | 需找好软件 |
 | 备份片片 | 小部分 | 非常重要 | 一般 | 小难 |  |
 | 色图分类 | 未开始 | 一般     | 不急 | 一般 |  |
 | 整FC游戏音乐 | 以前整过一点 | 一般 | 一般 | 小难 |  |
