@@ -6,9 +6,15 @@ kuing，GG，19880618~，地道广州人，高中毕业，无业游民
 
 QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gtimg.cn/qzone/em/e248.gif)）
 
-## 爱好
+## 喜好
 
-数学、妹纸、LaTeX —— 即：撸题、撸片、撸代码
+- 妹纸——特别是：胖妹纸
+
+- 数学——主要是初等数学——特别是：不等式
+
+- LaTeX
+
+也就是我常说的：撸片撸题撸代码
 
 ## 现状
 
@@ -39,12 +45,38 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 |  To Do  | 完成度 | 重要度 | 紧急度 | 难度 | 备注 | 
 |  ----  | ----  | ----  | ----  | ----  | ----  |
-| 整理片片 | 小部分 | 非常重要 | 小急 | 困难 |  |
+| 整理片片 | 小部分 | 非常重要 | 小急 | 困难 | 需寻找好用的软件 |
 | 备份片片 | 小部分 | 非常重要 | 一般 | 小难 |  |
-| 色图分类 | 未开始 | 一般    | 不急 | 一般 |  |
+| 色图分类 | 未开始 | 一般     | 不急 | 一般 |  |
 | 整FC游戏音乐 | 以前整过一点 | 一般 | 一般 | 小难 |  |
 
+## 常用工具推荐
 
+### 剪片相关
+
+- Ultra Video Splitter（剪切）
+- Ultra Video Joiner（合并）
+- Xilisoft Video Editor（剪切）
+- TS Merger Tools（ts 合并）
+- MKVtoolnix（mkv 编辑）
+- SolveigMM AVI Trimmer（avi 剪切）
+- ffmpeg（能做的远不止剪合，简直超强大，但需要学习）
+
+### 在线视频下载器
+
+- [9xbuddy](https://9xbuddy.com)
+- [TubeOffline](https://www.tubeoffline.com)
+- [SuperParse](https://superparse.com)
+
+### 数学相关
+
+- [WolframAlpha](https://www.wolframalpha.com)
+- [GeoGeBra](https://www.geogebra.org)
+
+### LaTeX 相关
+
+- [Overleaf（在线 LaTeX）](https://www.overleaf.com)
+- [Detexify（手写查找符号代码）](http://detexify.kirelabs.org/classify.html)
 
 <!--
 
