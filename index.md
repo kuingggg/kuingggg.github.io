@@ -32,9 +32,9 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 - [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php){:target="_blank"}（活跃中）
 - kuing 撸题精选（微信公众号：kuinglululu）（不太更新）
-- [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
-- [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
-- [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)（已丢荒）
+- [kuing 的新浪微博](https://weibo.com/kkkkuing){:target="_blank"}（不太更新）
+- [kuing's blog in is-programmer](http://kuing.is-programmer.com){:target="_blank"}（已丢荒）
+- [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826){:target="_blank"}（已丢荒）
 
 ---
 
@@ -42,13 +42,13 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 个人电子书
 
-- [《kuing 网络撸题集》（2015 冬至版）](http://kuing.orzweb.net/viewthread.php?tid=3757)
-- [《kuing 网络撸题集》（2016 ~ 2017 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=5088)
-- [《kuing 网络撸题集》（2018 ~ 2019 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=6830)
+- [《kuing 网络撸题集》（2015 冬至版）](http://kuing.orzweb.net/viewthread.php?tid=3757){:target="_blank"}
+- [《kuing 网络撸题集》（2016 ~ 2017 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=5088){:target="_blank"}
+- [《kuing 网络撸题集》（2018 ~ 2019 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=6830){:target="_blank"}
 
 ### 人教网刊《数学空间》
 
-[人教网刊《数学空间》全 1 ~ 17 期（可打印）PDF 打包](http://kuing.orzweb.net/viewthread.php?tid=6283&rpid=32416&ordertype=0&page=1#pid32416)
+[人教网刊《数学空间》全 1 ~ 17 期（可打印）PDF 打包](http://kuing.orzweb.net/viewthread.php?tid=6283&rpid=32416&ordertype=0&page=1#pid32416){:target="_blank"}
 
 ---
 
@@ -77,24 +77,25 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 在线视频下载器
 
-- [9xbuddy](https://9xbuddy.com)
-- [TubeOffline](https://www.tubeoffline.com)
-- [SuperParse](https://superparse.com)
+- [9xbuddy](https://9xbuddy.com){:target="_blank"}
+- [TubeOffline](https://www.tubeoffline.com){:target="_blank"}
+- [SuperParse](https://superparse.com){:target="_blank"}
 
 ### 数学相关
 
-- [WolframAlpha](https://www.wolframalpha.com)
-- [GeoGeBra](https://www.geogebra.org)
+- [WolframAlpha](https://www.wolframalpha.com){:target="_blank"}
+- [GeoGeBra](https://www.geogebra.org){:target="_blank"}
 
 ### LaTeX 相关
 
-- [Overleaf（在线 LaTeX）](https://www.overleaf.com)
-- [Detexify（手写查找符号代码）](http://detexify.kirelabs.org/classify.html)
+- [Overleaf（在线 LaTeX）](https://www.overleaf.com){:target="_blank"}
+- [Detexify（手写查找符号代码）](http://detexify.kirelabs.org/classify.html){:target="_blank"}
 
 ### 其他
 
-- [在线文本比较](http://www.jq22.com/textDifference)
-- [洗种子](https://www.btxi.cc)
+- [在线文本比较](http://www.jq22.com/textDifference){:target="_blank"}
+- [洗种子](https://www.btxi.cc){:target="_blank"}
+- [免费SSR](https://www.youneed.win/free-ssr){:target="_blank"}
 
 ---
 
@@ -102,14 +103,14 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 18+
 
-- [fc2club.com](https://fc2club.com)
-- [P站](https://www.pornhub.com)
-- [xvideos](https://www.xvideos.com)
-- [比思論壇 - 求檔區](http://bi-si11.xyz/forum-50-2.html)
-- [AV女優名 変換君](http://etigoya955.blog49.fc2.com)
-- [JAVLibrary](http://www.m45e.com/cn/)（网址常变）
-- [AVMOO](https://avmoo.host/cn/)（网址常变）
-- [AVSOX](https://avsox.host/cn/)（网址常变）
+- [fc2club.com](https://fc2club.com){:target="_blank"}
+- [P站](https://www.pornhub.com){:target="_blank"}
+- [xvideos](https://www.xvideos.com){:target="_blank"}
+- [比思論壇 - 求檔區](http://bi-si11.xyz/forum-50-2.html){:target="_blank"}
+- [AV女優名 変換君](http://etigoya955.blog49.fc2.com){:target="_blank"}
+- [JAVLibrary](http://www.m45e.com/cn/){:target="_blank"}（网址常变）
+- [AVMOO](https://avmoo.host/cn/){:target="_blank"}（网址常变）
+- [AVSOX](https://avsox.host/cn/){:target="_blank"}（网址常变）
 
 
 
