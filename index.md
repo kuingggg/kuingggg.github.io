@@ -1,10 +1,14 @@
 # kuing 的个人主页
 
+---
+
 ## 基本信息
 
 kuing，GG，19880618~，地道广州人，高中毕业，无业游民
 
 QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gtimg.cn/qzone/em/e248.gif)）
+
+---
 
 ## 喜好
 
@@ -14,18 +18,25 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 也就是我常说的：撸片撸题撸代码
 
+---
+
 ## 现状
 
 单身汪、夜喵、宅
 
 冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）
 
-## 论坛、微博、博客等
+---
+
+## 个人论坛、公众号、微博等
 
 - [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php)（活跃中）
+- kuing撸题精选（微信公众号：kuinglululu）（不太更新）
 - [kuing 的新浪微博](https://weibo.com/kkkkuing)（不太更新）
 - [kuing's blog in is-programmer](http://kuing.is-programmer.com)（已丢荒）
 - [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826)（已丢荒）
+
+---
 
 ## 作品
 
@@ -39,6 +50,8 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 [人教网刊《数学空间》全 1 ~ 17 期（可打印）PDF 打包](http://kuing.orzweb.net/viewthread.php?tid=6283&rpid=32416&ordertype=0&page=1#pid32416)
 
+---
+
 ## To Do List
 
 |  To Do  | 完成度 | 重要度 | 紧急度 | 难度 | 备注 | 
@@ -47,6 +60,8 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 | 备份片片 | 小部分 | 非常重要 | 一般 | 小难 |  |
 | 色图分类 | 未开始 | 一般     | 不急 | 一般 |  |
 | 整FC游戏音乐 | 以前整过一点 | 一般 | 一般 | 小难 |  |
+
+---
 
 ## 常用工具推荐
 
@@ -79,6 +94,24 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 ### 其他
 
 - [在线文本比较](http://www.jq22.com/textDifference)
+- [洗种子](https://www.btxi.cc)
+
+---
+
+## 常去网站
+
+### 18+
+
+- [fc2club.com](https://fc2club.com)
+- [P 站](https://www.pornhub.com)
+- [xvideos](https://www.xvideos.com)
+- [比思論壇 - 求檔區](http://bi-si11.xyz/forum-50-2.html)
+- [AV女優名 変換君](http://etigoya955.blog49.fc2.com)
+- [JAVLibrary](http://www.m45e.com/cn/)（网址常变）
+- [AVMOO](https://avmoo.host/cn/)（网址常变）
+- [AVSOX](https://avsox.host/cn/)（网址常变）
+
+
 
 <!--
 
