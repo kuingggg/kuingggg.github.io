@@ -59,7 +59,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 | 整理片片 | 小部分 | 非常重要 | 小急 | 困难 | 需找好软件 |
 | 备份片片 | 小部分 | 非常重要 | 一般 | 小难 |  |
 | 色图分类 | 未开始 | 一般     | 不急 | 一般 |  |
-| 整FC游戏音乐 | 以前整过一点 | 一般 | 一般 | 小难 |  |
+| 整FC游戏音乐 | 小部分(ing) | 一般 | 一般 | 小难 |  |
 
 ---
 
@@ -110,7 +110,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 - [AV女優名 変換君](http://etigoya955.blog49.fc2.com){:target="_blank"}
 - [JAVLibrary](http://www.m45e.com/cn/){:target="_blank"}（网址常变）
 - [AVMOO](https://avmoo.host/cn/){:target="_blank"}（网址常变）
-- [AVSOX](https://avsox.host/cn/){:target="_blank"}（网址常变）
+- [AVSOX](https://avsox.icu/cn/){:target="_blank"}（网址常变）
 
 
 
