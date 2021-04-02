@@ -112,6 +112,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 - [JAVLibrary](http://www.f50q.com/cn/){:target="_blank"}（网址常变）
 - [AVMOO](https://avmoo.cyou/cn/){:target="_blank"}（网址常变）
 - [AVSOX](https://avsox.website/cn/){:target="_blank"}（网址常变）
+- [JAVDB](https://javdb8.com){:target="_blank"}（网址常变）
 
 
 
