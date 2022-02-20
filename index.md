@@ -31,8 +31,8 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 ## 个人论坛、公众号、微博等
 
 - [悠闲数学娱乐论坛(第2版)](http://kuing.orzweb.net/index.php){:target="_blank"}（活跃中）
-- kuing 撸题精选（微信公众号：kuinglululu）（不太更新）
-- [kuing 的新浪微博](https://weibo.com/kkkkuing){:target="_blank"}（不太更新）
+- kuing 撸题精选（微信公众号：kuinglululu）（已丢荒）
+- [kuing 的新浪微博](https://weibo.com/kkkkuing){:target="_blank"}（已丢荒）
 - [kuing's blog in is-programmer](http://kuing.is-programmer.com){:target="_blank"}（已丢荒）
 - [kuing's blog in Art of Problem Solving (mathlinks)](https://artofproblemsolving.com/community/c1826){:target="_blank"}（已丢荒）
 
@@ -45,6 +45,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 - [《kuing 网络撸题集》（2015 冬至版）](http://kuing.orzweb.net/viewthread.php?tid=3757){:target="_blank"}
 - [《kuing 网络撸题集》（2016 ~ 2017 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=5088){:target="_blank"}
 - [《kuing 网络撸题集》（2018 ~ 2019 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=6830){:target="_blank"}
+- [《kuing 网络撸题集》（2020 ~ 2021 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=8465){:target="_blank"}
 
 ### 人教网刊《数学空间》
 
@@ -93,28 +94,35 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 其他
 
+- [菜鸟工具](https://c.runoob.com){:target="_blank"}
 - [在线文本比较](http://www.jq22.com/textDifference){:target="_blank"}
 - [洗种子](https://www.btxi.cc){:target="_blank"}
 - [免费SSR/v2ray](https://github.com/freefq/free){:target="_blank"}
 
 ---
 
-## 常去网站
+## 常去网站（18+）
 
-### 18+
+### 资讯查询
 
-- fc2club.com（已倒闭 T_T 太可惜！）
+- fc2club.com（原网站已倒闭，后有人做了[镜像档](https://fc2club.net/index9389.html?m=content&c=index&a=lists&catid=6){:target="_blank"}）
+- [JAVDB](https://javdb36.com){:target="_blank"}（有预告片、磁力、评论）（网址常变）
+- [JAVLibrary](http://www.o58c.com/cn/){:target="_blank"}（仅有马，有评论）（网址常变）
+- [比思論壇 - 求檔區](http://bisi777.cc/forum-50-2.html){:target="_blank"}（网址常变）
+- [AV女優名 変換君](http://etigoya955.blog49.fc2.com){:target="_blank"}（女优别名查询）
+- [裏女優に首ったけseason.2](http://maipenrai03.blog.2nt.com){:target="_blank"}（女优别名查询）
+- [AV女優 INDEX](http://mankowomiseruavzyoyu.blog.fc2.com){:target="_blank"}（女优作品信息、画像）
+- [AVMOO](https://avmoo.sbs/cn/){:target="_blank"}（有马）（网址常变）
+- [AVSOX](https://avsox.monster/cn/){:target="_blank"}（无马）（网址常变）
+- [javbest](http://javbest.net){:target="_blank"}（有缩略图）
+
+### 在线看片
+
 - [P站](https://www.pornhub.com){:target="_blank"}
 - [xvideos](https://www.xvideos.com){:target="_blank"}
-- [比思論壇 - 求檔區](http://bi-si11.xyz/forum-50-2.html){:target="_blank"}
-- [AV女優名 変換君](http://etigoya955.blog49.fc2.com){:target="_blank"}
-- [AV女優 INDEX](http://mankowomiseruavzyoyu.blog.fc2.com){:target="_blank"}
-- [JAVLibrary](http://www.f50q.com/cn/){:target="_blank"}（网址常变）
-- [AVMOO](https://avmoo.cyou/cn/){:target="_blank"}（网址常变）
-- [AVSOX](https://avsox.website/cn/){:target="_blank"}（网址常变）
-- [JAVDB](https://javdb8.com){:target="_blank"}（网址常变）
-
-
+- [JavTC](https://javtc.fun){:target="_blank"}
+- [X6AV](https://x6av.com){:target="_blank"}
+- [HPJAV](https://hpjav.tv){:target="_blank"}
 
 <!--
 
