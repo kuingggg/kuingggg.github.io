@@ -42,10 +42,10 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 个人电子书
 
-- [《kuing 网络撸题集》（2015 冬至版）](https://github.com/kuingggg/kuingggg.github.io/blob/master/kuingluing20151222.pdf){:target="_blank"}（[勘误表](http://kuing.orzweb.net/viewthread.php?tid=3763){:target="_blank"}）
-- [《kuing 网络撸题集》（2016 ~ 2017 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=5088){:target="_blank"}
-- [《kuing 网络撸题集》（2018 ~ 2019 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=6830){:target="_blank"}
-- [《kuing 网络撸题集》（2020 ~ 2021 懒人版）](http://kuing.orzweb.net/viewthread.php?tid=8465){:target="_blank"}
+- [《kuing 网络撸题集》（2015 冬至版）](https://github.com/kuingggg/kuingggg.github.io/raw/master/kuingluing20151222.pdf){:target="_blank"} （[勘误表](http://kuing.orzweb.net/viewthread.php?tid=3763){:target="_blank"}）
+- [《kuing 网络撸题集》（2016 ~ 2017 懒人版）](https://github.com/kuingggg/kuingggg.github.io/raw/master/kuing%E7%BD%91%E7%BB%9C%E6%92%B8%E9%A2%98%E9%9B%86%EF%BC%882016-2017%E6%87%92%E4%BA%BA%E7%89%88%EF%BC%89.7z){:target="_blank"}
+- [《kuing 网络撸题集》（2018 ~ 2019 懒人版）](https://github.com/kuingggg/kuingggg.github.io/raw/master/kuing%E7%BD%91%E7%BB%9C%E6%92%B8%E9%A2%98%E9%9B%86%EF%BC%882018-2019%E6%87%92%E4%BA%BA%E7%89%88%EF%BC%89.7z){:target="_blank"}
+- [《kuing 网络撸题集》（2020 ~ 2021 懒人版）](https://github.com/kuingggg/kuingggg.github.io/raw/master/kuing%E7%BD%91%E7%BB%9C%E6%92%B8%E9%A2%98%E9%9B%86%EF%BC%882020-2021%E6%87%92%E4%BA%BA%E7%89%88%EF%BC%89.7z){:target="_blank"}
 
 ### 人教网刊《数学空间》
 
