@@ -67,8 +67,8 @@ window.MathJax = {
   loader: {
     load: ['[tex]/noerrors']
   },
-  svg: {
-    scale: 0.9,
-    fontCache: 'global'
-  }
+  //svg: {
+  //  scale: 0.9,
+  //  fontCache: 'global'
+  //}
 };
