@@ -49,7 +49,7 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 
 ### 人教网刊《数学空间》
 
-[人教网刊《数学空间》全 1 ~ 17 期（可打印）PDF 打包](http://kuing.orzweb.net/viewthread.php?tid=6283&rpid=32416&ordertype=0&page=1#pid32416){:target="_blank"}
+- [人教网刊《数学空间》全 1 ~ 17 期（可打印）PDF 打包](https://github.com/kuingggg/kuingggg.github.io/raw/master/%E4%BA%BA%E6%95%99%E7%BD%91%E5%88%8A%E3%80%8A%E6%95%B0%E5%AD%A6%E7%A9%BA%E9%97%B4%E3%80%8B%E5%85%A81-17%E6%9C%9F%EF%BC%88%E5%8F%AF%E6%89%93%E5%8D%B0%EF%BC%89PDF%E6%89%93%E5%8C%85%E4%B8%8B%E8%BD%BD.zip){:target="_blank"}
 
 ---
 
