@@ -2,6 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+.wrapper {
+    width: 750px;
+}
 section {
-    width: 600px;
+    width: 540px;
+}
+header,footer {
+    width: 160px;
 }
