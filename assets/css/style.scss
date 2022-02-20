@@ -2,4 +2,6 @@
 ---
 
 @import "{{ site.theme }}";
-body{background:#669900;}
+section {
+    width: 600px;
+}
