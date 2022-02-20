@@ -113,6 +113,8 @@ QQ: 249533164（除特殊情况外只加妹纸![斜眼笑](https://qzonestyle.gt
 - [X6AV](https://x6av.com){:target="_blank"}
 - [HPJAV](https://hpjav.tv){:target="_blank"}
 
+（建议先部署好 科.学.上.网 以及 浏览器去广告插件 再进入以上链接）
+
 ---
 
 ## To Do List
