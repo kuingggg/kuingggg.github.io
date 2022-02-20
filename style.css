@@ -279,7 +279,7 @@ body {
     padding: 50px;
     font: 16px/1.5 Verdana, Tahoma, Arial, "Source Han Sans CN", "Microsoft YaHei",
 sans-serif;
-    color: #727272;
+    color: #444;
     font-weight: 400
 }
 
@@ -569,9 +569,9 @@ footer {
 }
 
 section {
-    width: 540px
+    width: 580px
 }
 
 header,footer {
-    width: 180px
+    width: 140px
 }
