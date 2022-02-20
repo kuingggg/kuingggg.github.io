@@ -572,6 +572,7 @@ section {
     width: 580px
 }
 
-header,footer {
-    width: 140px
+header, footer {
+    width: 140px;
+    text-align: center;
 }
