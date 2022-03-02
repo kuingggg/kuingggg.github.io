@@ -146,15 +146,15 @@ footer {
 }
 
 
-
+body {
+    padding: 50px 0;
+}
 .wrapper {
     width: 750px
 }
-
 section {
     width: 580px
 }
-
 header, footer {
     width: 140px;
     text-align: center;
