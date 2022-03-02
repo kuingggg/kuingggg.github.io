@@ -146,9 +146,7 @@ footer {
 }
 
 
-body {
-    padding: 50px 0;
-}
+
 .wrapper {
     width: 750px
 }
@@ -161,7 +159,11 @@ header, footer {
 }
 
 
-@media print, screen and (max-width: 750px) {
+@media print, screen and (max-width: 800px) {
+    body {
+        padding: 25px
+    }
+    
     div.wrapper {
         width: auto;
         margin: 0
@@ -172,11 +174,7 @@ header, footer {
         position: static;
         width: auto
     }
-/*
-    header {
-        padding-right: 320px
-    }
-*/
+
     section {
         border: 1px solid #e5e5e5;
         border-width: 1px 0;
@@ -199,11 +197,7 @@ header, footer {
     body {
         word-wrap: break-word
     }
-/*
-    header {
-        padding: 0
-    }
-*/
+
     header ul,header p.view {
         position: static
     }
@@ -215,7 +209,7 @@ header, footer {
 
 @media print, screen and (max-width: 480px) {
     body {
-        padding: 15px
+        padding: 5px
     }
 }
 
