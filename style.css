@@ -1,6 +1,6 @@
 body {
     background-color: #fff;
-    padding: 50px;
+    padding: 50px 0;
     font: 16px/1.5 Verdana, Tahoma, Arial, "Source Han Sans CN", "Microsoft YaHei", sans-serif;
     color: #444;
     font-weight: 400
@@ -88,7 +88,7 @@ table {
 
 th,td {
     text-align: left;
-    padding: 5px 10px;
+    padding: 5px;
     border-bottom: 1px solid #e5e5e5
 }
 
