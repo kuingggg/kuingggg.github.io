@@ -230,6 +230,20 @@
       </section>
 
     </div>
+    
+    <script>
+    var h23s = document.querySelectorAll('h2,h3');
+    for (let item of h23s) {
+        var theid = item.id;
+        var ha = document.createElement('a');
+        ha.classList.add("hlnk");
+        ha.href = "#" + theid;
+        ha.target = "_self";
+        ha.innerHTML = "¶";
+        item.appendChild(ha);
+    }
+    </script>
+    
     <script>
 (function(document) {
     var metas = document.getElementsByTagName('meta'),
