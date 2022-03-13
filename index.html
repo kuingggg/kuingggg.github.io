@@ -30,7 +30,7 @@
 
         <p class="view"><a href="https://github.com/kuingggg/kuingggg.github.io">View Files</a></p>
 
-
+<ul id="ml" style="text-align:left"></ul>
 
       </header>
       <section>
@@ -233,15 +233,37 @@
     
     <script>
     var h23s = document.querySelectorAll('h2,h3');
-    for (let item of h23s) {
-        var theid = item.id;
-        var ha = document.createElement('a');
-        ha.classList.add("hlnk");
-        ha.href = "#" + theid;
-        ha.target = "_self";
-        ha.innerHTML = "¶";
-        item.appendChild(ha);
-    }
+    //for (let item of h23s) {
+    //    var theid = item.id;
+    //    var ha = document.createElement('a');
+    //    ha.classList.add("hlnk");
+    //    ha.href = "#" + theid;
+    //    ha.target = "_self";
+    //    ha.innerHTML = "¶";
+    //    item.appendChild(ha);
+    //}
+var ml = document.querySelector('#ml');
+var n=2;
+var str="";
+for (let item of h23s) {
+	var theid = item.id;
+	if (n==2) {
+		if (item.nodeName == 'H2') {
+			str += '<li><a href="#'+theid+'" target = "_self">'+item.innerText+'</a></li>';
+		} else {
+			str += '<ul><li><a href="#'+theid+'" target = "_self">'+item.innerText+'</a></li>';
+			n=3;
+		} 
+	} else {
+		if (item.nodeName == 'H2') {
+			str += '</ul><li><a href="#'+theid+'" target = "_self">'+item.innerText+'</a></li>';
+			n=2;
+		} else {
+			str += '<li><a href="#'+theid+'" target = "_self">'+item.innerText+'</a></li>';
+		}
+	}
+}
+ml.innerHTML = str;
     </script>
     
     <script>
