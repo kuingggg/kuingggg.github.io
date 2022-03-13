@@ -164,6 +164,7 @@ h2 .hlnk, h3 .hlnk {
 h2:hover .hlnk, h3:hover .hlnk {
     visibility: visible;
 }
+#ml ul {margin:0}
 
 
 @media print, screen and (max-width: 800px) {
@@ -218,6 +219,7 @@ h2:hover .hlnk, h3:hover .hlnk {
     body {
         padding: 5px
     }
+    #ml {display:none;}
 }
 
 @media print {
