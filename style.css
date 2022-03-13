@@ -167,7 +167,7 @@ h2:hover .hlnk, h3:hover .hlnk {
 #ml {text-align:left;
     padding-left:1em;}
 #ml ul {margin:0;
-    padding-left:2em;}
+    padding-left:1em;}
 
 
 @media print, screen and (max-width: 800px) {
@@ -202,6 +202,7 @@ h2:hover .hlnk, h3:hover .hlnk {
         right: 50px;
         top: 52px
     }
+    #ml {display:none;}
 }
 
 @media print, screen and (max-width: 720px) {
@@ -222,7 +223,6 @@ h2:hover .hlnk, h3:hover .hlnk {
     body {
         padding: 5px
     }
-    #ml {display:none;}
 }
 
 @media print {
