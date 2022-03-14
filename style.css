@@ -148,13 +148,13 @@ footer {
 
 /***********************/
 .wrapper {
-    width: 800px
+    width: 790px
 }
 section {
     width: 580px
 }
 header, footer {
-    width: 200px;
+    width: 190px;
     text-align: center;
 }
 h2 .hlnk, h3 .hlnk {
