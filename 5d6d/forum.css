@@ -1,0 +1,133 @@
+/* ::::: http://kkkkuingggg.5d6d.net/caches/tempcaches/ee/kkkkuingggg/style_1_common.css?Td7 ::::: */
+
+* { word-wrap: break-word; }
+body { background: /*url('bodybg.gif') repeat-x scroll 0pt 90px*/ rgb(13, 35, 69); text-align: center; }
+body, td, input, textarea, select, button { color: rgb(68, 68, 68); font: 14px/1.6em Verdana,Helvetica,Arial,sans-serif; }
+input, select, button { vertical-align: middle; }
+body, ul, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset { margin: 0pt; padding: 0pt; }
+h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+ul li { list-style: none outside none; }
+a { text-decoration: none; color: rgb(0, 0, 0); }
+a:hover { text-decoration: underline; }
+a img { border: medium none; }
+em, cite, strong, th { text-align: left; font-style: normal; }
+table { empty-cells: show; border-collapse: collapse; }
+th { font-weight: 400; }
+.pipe { margin: 0pt 5px; }
+.lighttxt, .lighttxt a, .pipe { color: rgb(153, 153, 153); }
+.smalltext { font-size: 0.83em; font-family: Verdana,Helvetica,Arial,sans-serif; }
+.noborder, .noborder td { border: medium none ! important; }
+#ajaxwaitid { display: none; position: absolute; z-index: 100; top: 0pt; right: 0pt; width: 100px; height: 1.6em; background: none repeat scroll 0% 0% rgb(221, 0, 0); line-height: 1.6em; color: rgb(255, 255, 255); overflow: hidden; }
+.s_clear:after { content: "."; display: block; height: 0pt; clear: both; visibility: hidden; }
+.s_clear {  }
+.wrap { text-align: left; margin: 0pt auto; }
+#wrap { padding-bottom: 10px; min-height: 450px; border: 0pt solid rgb(0, 178, 232); background-color: rgb(255, 255, 255); clear: both; }
+.wrap, #nav { width: 1024px; }
+#header { margin-bottom: 8px; min-width: 1024px; width: 100%; border-bottom: 1px solid rgb(0, 178, 232); background: /*url('header.gif') repeat-x scroll 0pt 100%*/ rgb(0, 162, 210); }
+#header .wrap { position: relative; padding: 36px 0pt 22px; }
+#header h2 { float: left; }
+#umenu { position: absolute; right: 0pt; top: 0pt; line-height: 20px; z-index: 9; }
+#umenu a { margin: 0pt 6px; }
+#umenu, #umenu a, #umenu .pipe { color: rgb(151, 242, 255); }
+#footer { padding: 1em 0pt; }
+#rightinfo { float: left; }
+#footlink { float: right; text-align: right; }
+#footer, #footer a { color: rgb(134, 145, 162); }
+.content { padding: 20px 25px; }
+.content h1 { margin-bottom: 10px; font-size: 16px; font-weight: 400; }
+#menu { position: absolute; right: 0pt; bottom: 0pt; height: 26px; z-index: 9; }
+#menu li { display: inline; float: left; margin-left: 5px; background: url('mtabbg.gif') repeat-x scroll 0pt 100% rgb(235, 244, 253); }
+#menu a { float: left; padding: 0pt 14px; height: 25px; border-style: solid; border-color: rgb(176, 228, 239); border-width: 1px 1px 0pt; background: none repeat scroll 0% 0% transparent; line-height: 25px; color: rgb(102, 102, 102); text-decoration: none; overflow: hidden; }
+#menu a:hover { border-color: rgb(0, 178, 232); background-color: rgb(30, 75, 126); color: rgb(195, 211, 228); }
+#nav { margin: -8px auto 0pt; /*background: url('icon_nav.gif') no-repeat scroll 0pt 50% transparent;*/ text-align: left; text-indent: 25px; line-height: 3em; }
+#nav, #nav a { color: rgb(195, 211, 228); }
+.channelinfo { clear: both; margin: 5px 0pt; color: rgb(102, 102, 102); }
+.pages_btns { padding: 5px 0pt 1em; line-height: 30px; }
+.postbtn, .replybtn, #modopt, #modopttmp { float: left; margin-right: 10px; color: rgb(0, 153, 204); cursor: pointer; }
+#modopt, #modopttmp, .threadlist tfoot a { background-color: rgb(255, 255, 255); border-width: 1px; border-style: solid; border-color: rgb(153, 153, 153) rgb(204, 204, 204) rgb(204, 204, 204) rgb(153, 153, 153); padding: 0pt 16px 0pt 6px; line-height: 20px; }
+.threadlist tfoot a { margin-right: 5px; padding: 3px 16px 3px 3px; }
+#modopt:hover, #modopttmp:hover, .threadlist tfoot a:hover { text-decoration: none; color: rgb(0, 153, 204); }
+.postbtn, .replybtn { width: 67px; height: 30px; background: url('newtopic.gif') no-repeat scroll 0pt 0pt transparent; font-size: 14px; font-weight: 700; line-height: 28px; text-align: center; overflow: hidden; }
+.postbtn a, .replybtn a { display: block; padding-left: 5px; color: rgb(255, 255, 255); letter-spacing: 5px; }
+.postbtn a:hover, .replybtn a:hover { text-decoration: none; }
+.pages, .pageback { float: right; padding: 2px 0pt; }
+.pages a, .pages strong, .pageback a { float: left; padding: 0pt 6px; margin-right: 2px; height: 20px; border: 1px solid; line-height: 20px; overflow: hidden; }
+.pages a, .pageback a { border-color: rgb(230, 231, 225); background-color: rgb(255, 255, 255); color: rgb(0, 153, 204); }
+.pages a:hover, .pageback a:hover { text-decoration: none; }
+.pages strong { border-color: rgb(0, 153, 204); background-color: rgb(0, 153, 204); color: rgb(255, 255, 255); font-weight: 700; }
+.pages a.prev, .pages a.next { background-repeat: no-repeat; }
+.pages a.prev { background-image: url('arrow_left.gif'); background-position: 30% 50%; padding: 0pt; width: 22px; overflow: hidden; text-indent: -9999px; }
+.pages a.next { padding-right: 16px; background-image: url('arrow_right.gif'); background-position: 90% 50%; }
+.pageback a { padding-left: 16px; background: url('arrow_left.gif') no-repeat scroll 0pt 50% rgb(255, 255, 255); }
+.pages a:hover, .pageback a, .pages a.next { border-color: rgb(0, 153, 204); }
+.datalist {  }
+.datalist table { margin-bottom: 30px; width: 100%; border: 1px solid rgb(230, 231, 225); }
+.datalist th, .datalist td { padding: 4px 5px; border: 1px solid rgb(230, 231, 225); font-weight: 400; }
+.datalist th img { vertical-align: top; }
+.datalist .datatable { margin-bottom: 10px; }
+.datalist .datatable, .datalist .datatable th, .datalist .datatable td { border-width: 1px 0pt; }
+.colplural, .colplural th, .colplural td { background-color: rgb(245, 245, 245); }
+#forumheader { line-height: 24px; }
+#forumheader h1 { float: left; margin-right: 1em; font-weight: 700; }
+#forumheader .forumstats { float: left; margin-right: 1em; }
+#forumheader .forumstats strong { color: rgb(255, 102, 0); }
+.forumaction { float: left; }
+.forumaction a { padding-left: 20px; padding-right: 1em; background: url('icon_fav.gif') no-repeat scroll 0pt 50% transparent; }
+.forumaction .digest { background-image: url('digest_3.gif'); }
+#forumheader #modedby { clear: both; }
+.threadtype { padding: 8px 6px; border-top: 3px solid rgb(230, 231, 225); line-height: 2em; }
+.threadtype a, .threadtype strong { margin-right: 6px; padding-right: 6px; border-right: 1px solid rgb(230, 231, 225); white-space: nowrap; }
+.threadtype strong { font-weight: 700; color: rgb(0, 153, 204); white-space: nowrap; }
+.folder { width: 25px; text-align: center; }
+td.icon { width: 28px; text-align: center; }
+.subject label { float: right; }
+.threadlist th a:hover, .subject a:hover { color: rgb(0, 153, 204); }
+.datatable .subject { padding: 7px 5px; }
+.threadpages { white-space: nowrap; }
+.threadpages a { color: rgb(68, 68, 68); }
+.forum, .author, .lastpost { width: 100px; }
+.lastpost, .lastpost cite, .lastpost em { text-align: right; }
+.author cite, .lastpost cite { display: block; margin-bottom: -5px; width: 95px; height: 1.6em; overflow: hidden; }
+thead .lastpost cite { margin-bottom: 0pt; }
+.author em, .lastpost em, .lastpost em a { font-size: 9px; font-family: Arial,sans-serif; color: rgb(153, 153, 153); }
+.lastpost cite, .lastpost em { display: block; margin-right: 5px; }
+.nums { width: 80px; color: rgb(153, 153, 153); text-align: right; }
+thead .nums { color: rgb(68, 68, 68); }
+.nums strong { padding-right: 2px; color: rgb(0, 153, 204); font-weight: 400; }
+.nums em { padding-left: 2px; color: rgb(68, 68, 68); }
+.threadlist td { padding: 0pt ! important; }
+.threadlist .colplural th, .threadlist .colplural td { padding: 3px 0pt ! important; background: none repeat scroll 0% 0% rgb(235, 242, 248); }
+.threadlist th em { margin-right: 4px; }
+.threadlist th em, .threadlist th em a { color: rgb(0, 153, 204); }
+.threadlist th .attach { vertical-align: middle; }
+.threadlist th a { text-decoration: none; }
+.dropmenu { padding-right: 15px; background: url('arrow_down.gif') no-repeat scroll 100% 50% transparent; cursor: pointer; }
+.popupmenu_popup { overflow: hidden; padding: 10px; text-align: left; line-height: 1.4em; border: 1px solid rgb(127, 202, 226); background: none repeat scroll 0% 0% rgb(254, 254, 254); }
+.headermenu_popup { width: 100px; }
+.headermenu_popup li { width: 100px; line-height: 24px; border-bottom: 1px solid rgb(230, 231, 225); }
+.headermenu_popup .active { font-weight: 700; }
+.filter_popup { width: 5em; }
+.filter_popup li { width: 60px; }
+.postmenu { width: 100px; }
+.postmenu li, #visitedforums_menu li { float: left; background: url('folder_s.gif') no-repeat scroll 3px 50% transparent; }
+.postmenu li.poll { background-image: url('pollsmall.gif'); }
+.postmenu li.trade { background-image: url('tradesmall.gif'); }
+.postmenu li.reward { background-image: url('rewardsmall.gif'); }
+.postmenu li.activity { background-image: url('activitysmall.gif'); }
+.postmenu li.debate { background-image: url('debatesmall.gif'); }
+.postmenu li.video { background-image: url('videosmall.gif'); }
+.postmenu a, #visitedforums_menu a { display: block; width: 75px; border-bottom: 1px solid rgb(230, 231, 225); padding: 5px 0pt 5px 25px; }
+.postmenu a:hover, #visitedforums_menu a:hover { text-decoration: none; color: rgb(0, 153, 204); border-bottom-color: rgb(227, 237, 245); }
+#ad_headerbanner { float: right; margin: 5px 0pt 10px; }
+#umenu .vm { margin-top: 5px; }
+#umenu { margin-top: 5px; }
+.vm { vertical-align: middle; }
+.search_form { height: 38px; }
+.search_form_px { float: left; padding: 5px 4px 4px 30px; width: 300px; height: 17px; line-height: 17px; vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(132, 132, 132) rgb(224, 224, 224) rgb(224, 224, 224) rgb(132, 132, 132); background: url('bg_search.png') no-repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(102, 102, 102); }
+.search_form_px:focus { border-color: rgb(132, 132, 132); color: rgb(51, 51, 51); -moz-box-shadow: 0pt 0pt 2px rgb(132, 132, 132); }
+.search_form_pn { float: left; margin: 0pt 0pt 0pt 6px; padding: 0pt; width: 75px; height: 29px; border: medium none; background: url('bg_search.png') no-repeat scroll 0pt -51px rgb(255, 255, 255); cursor: pointer; }
+.search_form_pn em { display: none; }
+.search_form_keys { padding-left: 20px; height: 28px; line-height: 28px; overflow: hidden; }
+.search_form_keys strong { float: left; }
+.search_form_keys a { float: left; margin-right: 8px; color: rgb(0, 153, 204); white-space: nowrap; }
+.threadlist th .new { color: rgb(0, 153, 204); font-size: 9px; text-transform: uppercase; white-space: nowrap; }

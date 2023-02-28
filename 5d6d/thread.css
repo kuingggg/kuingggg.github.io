@@ -1,0 +1,248 @@
+/* ::::: http://kkkkuingggg.5d6d.net/caches/tempcaches/ee/kkkkuingggg/style_1_common.css?Td7 ::::: */
+
+* { word-wrap: break-word; }
+body { background: /*url('bodybg.gif') repeat-x scroll 0pt 90px*/ rgb(13, 35, 69); text-align: center; }
+body, td, input, textarea, select, button { color: rgb(68, 68, 68); font: 14px/1.6em Verdana,Helvetica,Arial,sans-serif; }
+input, select, button { vertical-align: middle; }
+body, ul, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset { margin: 0pt; padding: 0pt; }
+h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+ul li { list-style: none outside none; }
+a { text-decoration: none; color: rgb(0, 0, 0); }
+a:hover { text-decoration: underline; }
+a img { border: medium none; }
+em, cite, strong, th { text-align: left; font-style: normal; }
+table { empty-cells: show; border-collapse: collapse; }
+.pipe { margin: 0pt 5px; }
+.lighttxt, .lighttxt a, .pipe { color: rgb(153, 153, 153); }
+.smalltext { font-size: 0.83em; font-family: Verdana,Helvetica,Arial,sans-serif; }
+.noborder, .noborder td { border: medium none ! important; }
+.right { float: right; }
+.left { float: left; }
+#ajaxwaitid { display: none; position: absolute; z-index: 100; top: 0pt; right: 0pt; width: 100px; height: 1.6em; background: none repeat scroll 0% 0% rgb(221, 0, 0); line-height: 1.6em; color: rgb(255, 255, 255); overflow: hidden; }
+.s_clear:after { content: "."; display: block; height: 0pt; clear: both; visibility: hidden; }
+.s_clear {  }
+.cornerlayger { padding: 6px 8px; border: 1px solid rgb(0, 153, 204); background: none repeat scroll 0% 0% rgb(235, 242, 248); line-height: 1.6em; }
+.minicorner { margin-top: -1px; height: 6px; /*background: url('attachinfobg.gif') no-repeat scroll 50% 0pt transparent;*/ }
+.wrap { text-align: left; margin: 0pt auto; }
+#wrap { padding-bottom: 10px; min-height: 450px; border: 0pt solid rgb(0, 178, 232); background-color: rgb(255, 255, 255); clear: both; }
+.wrap, #nav { width: 1024px; }
+#header { margin-bottom: 8px; min-width: 1024px; width: 100%; border-bottom: 1px solid rgb(0, 178, 232); background: /*url('header.gif') repeat-x scroll 0pt 100%*/ rgb(0, 162, 210); }
+#header .wrap { position: relative; padding: 36px 0pt 22px; }
+#header h2 { float: left; }
+#umenu { position: absolute; right: 0pt; top: 0pt; line-height: 20px; z-index: 9; }
+#umenu a { margin: 0pt 6px; }
+#umenu, #umenu a, #umenu .pipe { color: rgb(151, 242, 255); }
+#footer { padding: 1em 0pt; }
+#rightinfo { float: left; }
+#footlink { float: right; text-align: right; }
+#footer, #footer a { color: rgb(134, 145, 162); }
+#menu { position: absolute; right: 0pt; bottom: 0pt; height: 26px; z-index: 9; }
+#menu li { display: inline; float: left; margin-left: 5px; background: url('mtabbg.gif') repeat-x scroll 0pt 100% rgb(235, 244, 253); }
+#menu a { float: left; padding: 0pt 14px; height: 25px; border-style: solid; border-color: rgb(176, 228, 239); border-width: 1px 1px 0pt; background: none repeat scroll 0% 0% transparent; line-height: 25px; color: rgb(102, 102, 102); text-decoration: none; overflow: hidden; }
+#menu a:hover { border-color: rgb(0, 178, 232); background-color: rgb(30, 75, 126); color: rgb(195, 211, 228); }
+#nav { margin: -8px auto 0pt; /*background: url('icon_nav.gif') no-repeat scroll 0pt 50% transparent;*/ text-align: left; text-indent: 25px; line-height: 3em; }
+#nav, #nav a { color: rgb(195, 211, 228); }
+.mainbox table { width: 100%; }
+.postbtn, .replybtn, #modopt, #modopttmp { float: left; margin-right: 10px; color: rgb(0, 153, 204); cursor: pointer; }
+.postbtn, .replybtn { width: 67px; height: 30px; background: url('newtopic.gif') no-repeat scroll 0pt 0pt transparent; font-size: 14px; font-weight: 700; line-height: 28px; text-align: center; overflow: hidden; }
+.replybtn { background-image: url('reply.gif'); }
+.postbtn a, .replybtn a { display: block; padding-left: 5px; color: rgb(255, 255, 255); letter-spacing: 5px; }
+.postbtn a:hover, .replybtn a:hover { text-decoration: none; }
+.pages, .pageback { float: right; padding: 2px 0pt; }
+.pages a, .pages strong, .pageback a { float: left; padding: 0pt 6px; margin-right: 2px; height: 20px; border: 1px solid; line-height: 20px; overflow: hidden; }
+.pages a, .pageback a { border-color: rgb(230, 231, 225); background-color: rgb(255, 255, 255); color: rgb(0, 153, 204); }
+.pages a:hover, .pageback a:hover { text-decoration: none; }
+.pages strong { border-color: rgb(0, 153, 204); background-color: rgb(0, 153, 204); color: rgb(255, 255, 255); font-weight: 700; }
+.pages a.prev, .pages a.next { background-repeat: no-repeat; }
+.pages a.next { padding-right: 16px; background-image: url('arrow_right.gif'); background-position: 90% 50%; }
+.pageback a { padding-left: 16px; background: url('arrow_left.gif') no-repeat scroll 0pt 50% rgb(255, 255, 255); }
+.pages a:hover, .pageback a, .pages a.next { border-color: rgb(0, 153, 204); }
+.popupmenu_popup { overflow: hidden; padding: 10px; text-align: left; line-height: 1.4em; border: 1px solid rgb(127, 202, 226); background: none repeat scroll 0% 0% rgb(254, 254, 254); }
+.postmenu { width: 100px; }
+.postmenu li, #visitedforums_menu li { float: left; background: url('folder_s.gif') no-repeat scroll 3px 50% transparent; }
+.postmenu li.poll { background-image: url('pollsmall.gif'); }
+.postmenu li.trade { background-image: url('tradesmall.gif'); }
+.postmenu li.reward { background-image: url('rewardsmall.gif'); }
+.postmenu li.activity { background-image: url('activitysmall.gif'); }
+.postmenu li.debate { background-image: url('debatesmall.gif'); }
+.postmenu li.video { background-image: url('videosmall.gif'); }
+.postmenu a, #visitedforums_menu a { display: block; width: 75px; border-bottom: 1px solid rgb(230, 231, 225); padding: 5px 0pt 5px 25px; }
+.postmenu a:hover, #visitedforums_menu a:hover { text-decoration: none; color: rgb(0, 153, 204); border-bottom-color: rgb(227, 237, 245); }
+#ad_headerbanner { float: right; margin: 5px 0pt 10px; }
+#headsearch em { font-size: 20px; margin-right: 10px; color: rgb(0, 153, 204); }
+/* ::::: http://kkkkuingggg.5d6d.net/caches/tempcaches/ee/kkkkuingggg/style_1_viewthread.css?Td7 ::::: */
+.forumcontrol {  }
+.forumcontrol table { width: 100%; background: none repeat scroll 0% 0% rgb(235, 242, 248); }
+.forumcontrol td { padding: 15px; }
+.forumcontrol .modaction { width: 140px; background: none repeat scroll 0% 0% rgb(211, 232, 242); }
+.userinfopanel { position: absolute; z-index: 9999; margin: -1px 0pt 0pt 9px; width: 500px; border: 1px solid rgb(127, 202, 226); background: none repeat scroll 0% 0% rgb(255, 255, 255); opacity: 0.99; }
+.popavatar { float: left; width: 150px; }
+.popuserinfo { float: left; width: 350px; padding: 5px 0pt; }
+.imicons img { vertical-align: middle; margin: 0pt 8px 0pt 0pt; }
+.userinfopanel p { text-align: left; margin: 0pt ! important; padding: 0pt ! important; }
+.userinfopanel p a { color: rgb(0, 153, 204); }
+.userinfopanel dl { margin: 5px 0pt; padding: 5px 0pt; }
+.postauthor .userinfopanel dt { width: 70px; }
+.postauthor .userinfopanel dd { width: 100px; }
+.profile_side li { margin: 5px 0pt; background-position: 0pt 50%; background-repeat: no-repeat; text-indent: 22px; }
+.profile_side li.pm { background-image: url('pmto.gif'); }
+.profile_side li.buddy { background-image: url('addbuddy.gif'); }
+.viewthread {  }
+.threadfix { padding-bottom: 0pt ! important; min-height: 300px ! important; }
+.viewthread table, #pmprompt table, #forumlinks, #pmlist, #specialpost, #newpost, #editpost { table-layout: fixed; }
+.viewthread td.postcontent, .viewthread td.postauthor { vertical-align: top; padding: 0pt 1px; border: medium none; }
+.viewthread td.postcontent { padding: 0pt 15px; }
+.mainbox td.postauthor { padding: 0pt; width: 170px; background: none repeat scroll 0% 0% rgb(235, 242, 248); overflow: hidden; }
+.postauthor .avatar { margin: 10px 20px; }
+.postauthor p, .postauthor dl.profile { margin: 5px 10px 5px 20px; }
+.postauthor p em, .postauthor dt em { color: rgb(255, 102, 0); }
+.postauthor dd, .postauthor dt { height: 1.6em; line-height: 1.6em; float: left; overflow: hidden; }
+.postauthor dt { margin-right: 5px; width: 50px; }
+.postauthor dd { width: 80px; }
+.posterinfo, .postmessage, .postact { max-width: 800px; }
+.postinfo { color: rgb(102, 102, 102); margin-bottom: 10px; border-bottom: 1px dashed rgb(230, 231, 225); line-height: 36px; height: 36px; overflow: hidden; }
+.postinfo strong { float: right; height: 24px; color: rgb(68, 68, 68); line-height: 24px; padding: 0pt 6px; margin: 4px 4px 0 0; border: 1px solid rgb(255, 255, 255); }
+.postinfo strong a:hover { border: 1px solid rgb(0, 153, 204); text-decoration: none; }
+.postinfo em { color: rgb(0, 153, 204); margin-right: 4px; }
+.posterinfo { color: rgb(153, 153, 153); margin-right: auto; }
+.authicon { margin-bottom: -4px; cursor: pointer; }
+.posterinfo a, .posterinfo em { margin: 0pt 4px; color: rgb(68, 68, 68); }
+.postmessage { clear: left; }
+.postmessage * { line-height: normal; }
+.postmessage h1, .postmessage h2 { margin: 8px 0pt; font-size: 1.17em; }
+.postmessage h1 a { font-weight: 400; color: rgb(68, 68, 68); }
+#threadtitle { margin-bottom: 8px; border-bottom: 1px dashed rgb(230, 231, 225); }
+.defaultpost { padding-bottom: 1em; }
+.t_msgfont, .t_msgfont td { font-size: 15px; line-height: 1.6em; }
+.t_msgfont a, .t_msgfont aa { color: rgb(0, 153, 204); }
+.t_msgfont *, .t_bigfont .t_msgfont * { line-height: normal; }
+.signatures { overflow: hidden; padding: 20px 0pt 10px; color: rgb(102, 102, 102); line-height: 1.6em; background: url('sigline.gif') no-repeat scroll 0pt 0pt transparent; }
+.signatures * { line-height: normal; }
+.signatures strong { font-weight: 700; }
+.postactions { padding: 0pt 10px 0pt 0pt; border-top: 1px dashed rgb(230, 231, 225); }
+.postactions p { float: right; }
+.postactions p a { margin-right: 6px; }
+.postact { line-height: 36px; }
+.postact em { float: left; }
+.postact em a { padding: 5px 10px 5px 25px; }
+.fastreply { background: url('fastreply.gif') no-repeat scroll 0pt 50% transparent; }
+.repquote { background: url('repquote.gif') no-repeat scroll 0pt 50% transparent; }
+.t_attach, .t_attach_img { border: 1px solid rgb(230, 231, 225); background: none repeat scroll 0% 0% rgb(255, 255, 255); font-size: 12px; padding: 5px; }
+.t_attach { width: 130px; display: none; }
+.threadad {  }
+.threadad td.postauthor { background: none repeat scroll 0% 0% rgb(211, 232, 242); padding: 0pt; height: 6px; }
+.adcontent { background: none repeat scroll 0% 0% rgb(235, 242, 248); overflow: hidden; }
+.pstatus, .modact { display: block; height: 32px; text-align: center; font-style: normal; color: rgb(153, 153, 153); font-size: 12px; }
+.pstatus, .modact, .modact a { line-height: 32px ! important; color: rgb(153, 153, 153); }
+.useraction { height: 50px; width: 165px; clear: both; display: block; margin: 20px auto; }
+.useraction a { float: left; margin-right: 10px; text-align: center; height: 20px; width: 45px; padding: 30px 0pt 0pt; background: url('ajaxaction.gif') no-repeat scroll 0pt 0pt transparent; }
+#emailfriend { background-position: 0pt -50px; }
+#ratelink { background-position: 0pt -100px; }
+.newrate .cornerlayger { color: rgb(153, 153, 153); border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(247, 249, 248); white-space: nowrap; }
+.newrate .cornerlayger em { color: rgb(255, 102, 0); }
+.newrate .attach_popup { width: auto; }
+/*.newrate .minicorner { background: url('ratesrcorebg.gif') no-repeat scroll 5px 0pt transparent; }*/
+.quote, .blockcode { margin: 10px 0pt; padding: 10px 10px 10px 65px; }
+.quote { padding-bottom: 5px; background: url('icon_quote_s.gif') no-repeat scroll 20px 6px rgb(249, 249, 249); }
+.quote blockquote { margin: 0pt; padding: 0pt 65px 5px 0pt; background: url('icon_quote_e.gif') no-repeat scroll 100% 100% transparent; line-height: 1.6em; }
+.pagecontrol { float: right; width: 160px; }
+.print { padding-left: 20px; background: url('printpost.gif') no-repeat scroll 0pt 10px transparent; }
+.msgfsize * { float: left; }
+.msgfsize small, .msgfsize big { width: 20px; text-indent: -9999px; cursor: pointer; }
+.msgfsize small { background: url('text_common.gif') no-repeat scroll 7px 8px transparent; }
+.msgfsize big { background: url('text_zoom.gif') no-repeat scroll 0pt 8px transparent; }
+.postmessage strong { font-weight: bold; }
+.postmessage em { color: rgb(102, 102, 102); }
+.t_msgfontfix table, .specialmsg table { margin-left: 1px; }
+.postattachlist { width: 100%; margin-top: 2em; border-bottom: 1px dashed rgb(230, 231, 225) ! important; overflow: hidden; font-size: 12px; }
+.t_attachlist { float: left; width: 45%; height: 50px; overflow: hidden; padding: 10px; }
+.t_attachlist a { color: rgb(0, 153, 204); text-decoration: underline; }
+.t_attachlist dt { width: 40px; float: left; font-weight: 700; }
+.t_attachlist dd { margin-left: 40px; color: rgb(153, 153, 153); }
+.attachimg { width: 580px; height: auto; overflow: visible; float: none; }
+.attachimg dt { width: 0pt; }
+.attachimg dd { margin-left: 0pt; }
+.imgtitle { margin-bottom: 10px; }
+.attach_popup { width: 180px; border-style: solid; border-color: rgb(255, 255, 255); border-width: 5px 5px 0pt; }
+.newrate { margin: 20px 0pt; }
+.newrate dt { float: left; width: 80px; padding-top: 7px; text-align: center; }
+.newrate dt strong { height: 46px; padding: 12px 8px; font-size: 24px; background: none repeat scroll 0% 0% rgb(255, 244, 221); }
+.newrate dt p { padding-top: 10px; }
+.newrate dt strong a, .newrate dt strong a em { line-height: 48px; height: 48px; color: rgb(255, 102, 0); }
+.newrate dd { margin-left: 80px; }
+.newrate dd ul li { float: left; list-style: none outside none; width: 67px; height: 84px; overflow: hidden; margin: 0pt 4px; text-align: center; }
+.rateavatar { padding: 8px 0pt; }
+.rateavatar img { margin: auto; }
+.defaultpost { height: auto ! important; }
+.signatures { max-height: 100px; }
+.t_msgfontfix {  }
+#umenu .vm { margin-top: 5px; }
+#umenu { margin-top: 5px; }
+.vm { vertical-align: middle; }
+.t_attachlist { height: auto; width: 100%; border-top: 1px dashed rgb(230, 231, 225) ! important; }
+.t_attachlist dt { overflow: hidden; font-weight: normal; }
+.adcontent { overflow: hidden; }
+.viewthread td.postcontent { padding-right: 0pt; }
+.posterinfo { height: 36px; max-width: 100% ! important; width: 100% ! important; }
+.authorinfo { float: left; margin-top: 0px; width: 500px; }
+.t_msgfontfix { padding-right: 10px; }
+.search_form { height: 38px; }
+.search_form_px { float: left; padding: 5px 4px 4px 30px; width: 300px; height: 17px; line-height: 17px; vertical-align: middle; border-width: 1px; border-style: solid; border-color: rgb(132, 132, 132) rgb(224, 224, 224) rgb(224, 224, 224) rgb(132, 132, 132); background: url('bg_search.png') no-repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(102, 102, 102); }
+.search_form_px:focus { border-color: rgb(132, 132, 132); color: rgb(51, 51, 51); -moz-box-shadow: 0pt 0pt 2px rgb(132, 132, 132); }
+.search_form_pn { float: left; margin: 0pt 0pt 0pt 6px; padding: 0pt; width: 75px; height: 29px; border: medium none; background: url('bg_search.png') no-repeat scroll 0pt -51px rgb(255, 255, 255); cursor: pointer; }
+.search_form_pn em { display: none; }
+.search_form_keys { padding-left: 20px; height: 28px; line-height: 28px; overflow: hidden; }
+.search_form_keys strong { float: left; }
+.search_form_keys a { float: left; margin-right: 8px; color: rgb(0, 153, 204); white-space: nowrap; }
+.headsearch { padding: 10px; border-bottom: 1px solid rgb(230, 231, 225); }
+.search_form { height: 28px; }
+.share_zone { padding: 5px 0pt; }
+.share_qzone, .share_tweibo, .share_pengyou { padding: 5px 10px 5px 25px; }
+.share_qzone { background: url('qzone.gif') no-repeat scroll 0pt 50% transparent; }
+.share_tweibo { background: url('weibo.png') no-repeat scroll 0pt 50% transparent; }
+.share_pengyou { background: url('pengyou.png') no-repeat scroll 0pt 50% transparent; }
+.t_attachlist dt img { width: 32px; height: 32px; }
+#ftn_attach { width: 240px; }
+#ftn_date { width: 150px; text-align: center; }
+#ftn_down { width: 80px; text-align: center; }
+#ftn_url { width: 80px; font-weight: normal; text-align: center; }
+.t_msgfont li { margin-left: 2em; }
+.blockcode { padding: 10px 0pt 5px 10px; width: 586px; border: 1px solid rgb(204, 204, 204); background: url('codebg.gif') repeat-y scroll 0pt 0pt rgb(247, 247, 247); overflow: hidden; }
+.blockcode ol { margin: 0pt 0pt 0pt 10px; padding: 0pt; }
+.blockcode ol li { padding-left: 10px; list-style-type: decimal-leading-zero; font-family: Monaco,Consolas,"Lucida Console","Courier New",serif; font-size: 12px; line-height: 1.8em; }
+.blockcode ol li:hover { background: none repeat scroll 0% 0% rgb(255, 255, 255); color: rgb(0, 153, 204); }
+.blockcode em { margin-left: 43px; color: rgb(0, 153, 204) ! important; font-size: 12px; cursor: pointer; }
+.pages a.prev { background-image: url('arrow_left.gif'); background-position: 30% 50%; padding: 0pt; width: 22px; overflow: hidden; text-indent: -9999px; }
+.t_msgfont ul li { list-style-type: disc; }
+ul.litype_1 li { list-style-type: decimal; }
+.t_table { border: 1px solid rgb(227, 237, 245); empty-cells: show; border-collapse: collapse; }
+.t_table td { padding: 4px; border: 1px solid rgb(227, 237, 245); overflow: hidden; }
+hr { clear: both; margin: 1em 0pt; border: 0pt solid rgb(230, 231, 225); background: none repeat scroll 0% 0% transparent; }
+.solidline { border-top: 1px solid rgb(255, 255, 255); border-bottom-width: 1px; }
+.pollchart {  }
+.pollchart table { table-layout: fixed; }
+.pollchart table td { padding: 4px 2px; vertical-align: middle; }
+.polloption { width: auto; }
+.polloption.vote label { cursor: pointer; }
+.optionvotes { width: 100px; }
+.pollchart { width: 600px; }
+.pollchart .solidline { margin: 0pt; padding: 0pt; }
+.pollinfo { margin: 15px 0pt; color: rgb(102, 102, 102); }
+.pollinfo strong { color: rgb(68, 68, 68); }
+.polltimer { margin: -10px 0pt 15px; }
+.postratings { float: right; }
+.locked { margin: 10px 0pt; width: 560px; padding: 8px 8px 8px 24px; border: 1px dashed rgb(255, 154, 154); /*background: url('locked.gif') no-repeat scroll 6px 50% rgb(255, 255, 255);*/ font-size: 12px; }
+ul.litype_2 li { list-style-type: lower-alpha; }
+th { font-weight: 400; }
+.txt, .txtarea { padding: 2px; height: 16px; border-width: 1px; border-style: solid; border-color: rgb(153, 153, 153) rgb(204, 204, 204) rgb(204, 204, 204) rgb(153, 153, 153); background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.checkbox, .radio { margin: 0pt; width: 15px; }
+.shadowline { border-width: 1px 0pt; border-top-color: rgb(200, 220, 236); border-bottom-color: rgb(255, 255, 255); }
+.formtable { width: 100%; }
+.formtable th { padding: 5px 2px; width: 100px; }
+.formtable td { padding: 5px 2px; }
+.formtable .txt { width: 270px; }
+.msgfix { overflow: hidden; }
+.showmessage { position: relative; margin: 5px; padding: 80px 260px; height: 290px; background: none repeat scroll 0% 0% rgb(235, 242, 248); }
+.showmessage h1 { height: 30px; line-height: 30px; font-size: 18px; color: rgb(0, 153, 204); }
+.showmessage p { line-height: 24px; font-size: 14px; }
+.showmessage a { color: rgb(0, 153, 204); text-decoration: underline; font-weight: 700; }
