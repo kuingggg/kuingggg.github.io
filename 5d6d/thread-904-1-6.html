@@ -1,0 +1,719 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script src="mjxset.js"></script>
+<script src="mjx3/tex-svg.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta http-equiv="x-ua-compatible" content="ie=7">
+
+<title>一个数列无界性的证明 - 初等数学讨论 -  悠闲数学娱乐论坛  - Powered by Discuz!</title>
+
+<meta name="description" content=" 悠闲数学娱乐论坛  本帖最后由 都市侠影 于 2012-11-3 19:54 编辑 近日群里出现一个数列，要证明它的无界性。数列由 $a_{n+1}=a_n+\frac{1}{a_n^2}$ 来确定，并且 $a_1&gt;1$。略 ... - Discuz! Board">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="thread.css" media="all">
+</head><body id="viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="header">
+<div class="wrap s_clear">
+<h2><a indepth="true" href="index.html" title="悠闲数学娱乐论坛"><img src="k.png" alt="悠闲数学娱乐论坛" border="0"></a></h2>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="nav">
+<a indepth="true" href="index.html">悠闲数学娱乐论坛</a> » <a indepth="true" href="forum-16-6.html">初等数学讨论</a> » 一个数列无界性的证明</div>
+
+<div id="ad_text"></div><div id="wrap" class="wrap s_clear threadfix">
+    <div id="headsearch" class="headsearch">
+        
+
+
+
+        
+    </div>
+<div class="forumcontrol">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-16-6.html">返回列表</a></span>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div id="postlist" class="mainbox viewthread"><div id="post_4696"><table id="pid4696" summary="pid4696" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">都市侠影</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4696" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4696_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+都市侠影
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>647&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>在线时间</dt><dd>72 小时&nbsp;</dd><dt>注册时间</dt><dd>2012-6-5&nbsp;</dd><dt>最后登录</dt><dd>2012-12-7&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4696_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="27_avatar_middle_001.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>1</em><sup>#</sup></strong>
+
+<div class="authorinfo">
+<img class="authicon" id="authicon4696" src="online_member.gif" onclick="showauthor(this, 'userinfo4696');">
+<em id="authorposton4696">发表于 2012-11-3 19:42</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_0"></div>        <div id="ad_thread4_0"></div>
+<div class="postmessage firstpost">
+<div id="threadtitle">
+<h1>[数列] 一个数列无界性的证明</h1>
+</div>
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4696">
+                                <div id="ad_thread3_0"></div>                                <i class="pstatus"> 本帖最后由 都市侠影 于 2012-11-3 19:54 编辑 </i><br>
+<br>
+近日群里出现一个数列，要证明它的无界性。数列由 $a_{n+1}=a_n+\frac{1}{a_n^2}$ 来确定，并且 $a_1&gt;1$。<br>
+略证如下：假定对于某个 $n\geqslant 5$ 成立不等式 $a_n&lt;\sqrt{a_1^2+n}$，那么由于函数 $f(x)=x+\frac{1}{x^2}$ 在 $x\geqslant 2$ 时是增函数，有：<br>
+\[<br>
+a_{n+1}=a_n+\frac{1}{a_n^2} <br>
+&lt;\sqrt{a_1^2+n}+\frac{1}{a_1^2+n} <br>
+&lt;\sqrt{a_1^2+(n+1)}<br>
+\]<br>
+这就是说，根据数学归纳法，对于此项后面的所有项，就都成立这个不等式了。于是就有：<br>
+\[<br>
+a_{n+1}-a_n=\frac{1}{a_n^2}&gt;\frac{1}{a_1^2+n}<br>
+\]<br>
+取 $M$ 为不小于 $a_1^2$ 的任何一个正整数，有：<br>
+\[<br>
+a_{n+1}&gt;a_1+\sum_{k=1}^n\frac{1}{a_1^2+k}&gt;a_1+\sum_{k=1}^n\frac{1}{M+k}<br>
+\]<br>
+众所周知，自然数的倒数和是无界的，因此 $a_n$ 也是无界的。<br>
+至于不存在 $n\geqslant 5$ 使得 $a_n&lt;\sqrt{a_1^2+n}$ 成立的情况，这时数列明显就是无界的，证毕。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4696"></div>
+
+                                                
+                <div id="relate_subject" style="margin-top: 10px; width: 99%;"></div>
+                
+                
+                <div class="modact">本主题由 kuing 于 2013-1-19 15:39 分类</div>
+</div>
+
+</div>
+
+<div id="ad_thread1_0"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+<div id="ad_interthread"></div></td>
+</tr>
+</tbody></table>
+</div><div id="post_4698"><table id="pid4698" summary="pid4698" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">pxchg1200</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4698" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4698_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+pxchg1200
+<em>(Hong Ge Chen)</em><em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>14&nbsp;</dd><dt>帖子</dt><dd>427&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>2665&nbsp;</dd><dt>威望</dt><dd>2 &nbsp;</dd><dt>阅读权限</dt><dd>70&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广州大学&nbsp;</dd><dt>在线时间</dt><dd>330 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-10-3&nbsp;</dd><dt>最后登录</dt><dd>2013-6-4&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://wpa.qq.com/msgrd?V=1&amp;Uin=276908865&amp;Site=%D3%C6%CF%D0%CA%FD%D1%A7%D3%E9%C0%D6%C2%DB%CC%B3&amp;Menu=yes" target="_top" title="QQ">QQ</a><a href="http://pxchg1200.is-programmer.com/" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4698_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="14_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>金牌会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>14&nbsp;</dd><dt>帖子</dt><dd>427&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>2</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4698" src="online_member.gif" onclick="showauthor(this, 'userinfo4698');">
+<em id="authorposton4698">发表于 2012-11-3 20:54</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_1"></div>        <div id="ad_thread4_1"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4698">
+                                <div id="ad_thread3_1"></div>                                <i class="pstatus"> 本帖最后由 pxchg1200 于 2012-11-3 22:04 编辑 </i><br>
+<br>
+<strong> 1# <i>都市侠影</i> </strong><br>
+<br>
+<br>
+ah,若$a_{n}$ 有界，不妨设$ 0&lt;|a_{n}|\leq M$<br>
+\[ a_{n+1}=a_{n}+\frac{1}{a_{n}^{2}} \]<br>
+gives<br>
+\[ a_{n+1}=a_{1}+\sum_{k=1}^{n}{\frac{1}{a^{2}_{k}}}\geq a_{1}+\frac{n^{2}}{\sum_{k}{a^{2}_{k}}}\geq a_{1}+\frac{n}{M^{2}} \]<br>
+数列显然无界，所以矛盾。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4698"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_1"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+Let's solution say the method!</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4699"><table id="pid4699" summary="pid4699" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4699" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4699_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4699_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>3</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4699" src="online_admin.gif" onclick="showauthor(this, 'userinfo4699')">
+<em id="authorposton4699">发表于 2012-11-3 20:57</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_2"></div>        <div id="ad_thread4_2"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4699">
+                                <div id="ad_thread3_2"></div>                                <strong> 2# <i>pxchg1200</i> </strong><br>
+<br>
+昨天群聊记录也提到这个了，不过没你写得详细。<div class="quote"><blockquote>群管-kuing/bb/jy/cd&lt;<a href="mailto:kuingggg@qq.com">kuingggg@qq.com</a>&gt; 15:25:02 <br>
+\begin{align*}<br>
+a_n&amp;=(a_n-a_{n-1})+(a_{n-1}-a_{n-2})+\cdots+(a_2-a_1)+a_1\\<br>
+&amp;=\frac1{a_{n-1}^2}+\frac1{a_{n-2}^2}+\cdots+\frac1{a_1^2}+a_1,<br>
+\end{align*}<br>
+假设 $a_n$ 有界，那么 $\{1/a_n^2\}$ 不趋向 0，所以当 $n\to\infty$ 时后面的求和无穷，得 $a_n$ 无界，矛盾……</blockquote></div><div class="quote"><blockquote>爱好者-战巡(3705*****) 15:27:08 <br>
+或者之前说的，有界递增必有极限，此时a[n+1]=a[n]，无解<br>
+群管-kuing/bb/jy/cd&lt;<a href="mailto:kuingggg@qq.com">kuingggg@qq.com</a>&gt; 15:30:32 <br>
+严格点说应该是此时 lim a[n+1] = lim a[n]，于是得到 lim 1/a[n]^2=0，即 a[n] 无界，矛盾</blockquote></div><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4699"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_2"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4717"><table id="pid4717" summary="pid4717" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4717" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4717_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4717_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>4</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4717" src="online_admin.gif" onclick="showauthor(this, 'userinfo4717')">
+<em id="authorposton4717">发表于 2012-11-5 14:12</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_3"></div>        <div id="ad_thread4_3"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4717">
+                                <div id="ad_thread3_3"></div>                                $a_1&gt;1$ 其实可以弱化为 $a_1&gt;0$，下面用数学归纳法证明当 $n\geqslant 2$ 时恒有 $a_n&gt;\sqrt[3]{3n}$。<br>
+<br>
+先验证 $a_2$ 成立，由均值有<br>
+\[a_2=\frac{a_1}2+\frac{a_1}2+\frac1{a_1^2}\geqslant \frac3{\sqrt[3]4}&gt;\sqrt[3]6,\]<br>
+所以 $n=2$ 时成立，假设当 $n=k$ 时成立，即有 $a_k&gt;\sqrt[3]{3k}$，当 $n=k+1$ 时，因为函数 $f(x)=x+1/x^2$ 在 $\bigl(\sqrt[3]2,+\infty \bigr)$ 上单调增，而 $\sqrt[3]{3k}&gt;\sqrt[3]2$，所以<br>
+\[a_{k+1}=a_k+\frac1{a_k^2}&gt;\sqrt[3]{3k}+\frac1{\bigl(\sqrt[3]{3k}\bigr)^2}=\sqrt[3]{3k+\frac1k+\frac1{(3k)^2}+3}&gt;\sqrt[3]{3(k+1)},\]<br>
+于是当 $n=k+1$ 时也成立，故由数学归纳法知对任意 $n\geqslant 2$ 时都有 $a_n&gt;\sqrt[3]{3n}$。<br>
+<br>
+这样也算是从初等方法得到无\界吧<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4717"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_3"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4721"><table id="pid4721" summary="pid4721" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">yfgkey</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4721" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4721_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+yfgkey
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>447&nbsp;</dd><dt>帖子</dt><dd>1&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>5&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>10&nbsp;</dd><dt>在线时间</dt><dd>0 小时&nbsp;</dd><dt>注册时间</dt><dd>2012-11-5&nbsp;</dd><dt>最后登录</dt><dd>2013-5-25&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4721_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="47_avatar_middle_003.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>新手上路</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>447&nbsp;</dd><dt>帖子</dt><dd>1&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>5</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4721" src="online_member.gif" onclick="showauthor(this, 'userinfo4721');">
+<em id="authorposton4721">发表于 2012-11-5 15:23</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_4"></div>        <div id="ad_thread4_4"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4721">
+                                <div id="ad_thread3_4"></div>                                两位解的不错。<br>
+上次没注意到放缩那步，样如果两边直接求极限就搞定了。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4721"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_4"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4722"><table id="pid4722" summary="pid4722" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4722" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4722_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <a name="lastpost"></a><div id="userinfo4722_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>6</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4722" src="online_admin.gif" onclick="showauthor(this, 'userinfo4722')">
+<em id="authorposton4722">发表于 2012-11-5 15:26</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_5"></div>        <div id="ad_thread4_5"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4722">
+                                <div id="ad_thread3_5"></div>                                <strong> 5# <i>yfgkey</i> </strong><br>
+<br>
+<img src="e113.gif" smilieid="soso_e113" alt="" border="0"> 其实如果不是你做错了，大概就不会有这个贴以及这些解法了<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4722"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_5"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div></div>
+
+<div id="postlistreply" class="mainbox viewthread"><div id="post_new" style="display: none;"></div></div>
+
+
+
+
+<div class="forumcontrol s_clear">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-16-6.html">返回列表</a></span>
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="footer">
+<div class="wrap s_clear">
+<div id="footlink">
+
+<p class="smalltext">
+GMT+8, 2013-6-6 20:21.
+</p>
+
+</div>
+
+
+	</div>
+</div>
+
+</body></html>
