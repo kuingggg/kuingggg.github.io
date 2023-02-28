@@ -1,0 +1,1184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script src="mjxset.js"></script>
+<script src="mjx3/tex-svg.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta http-equiv="x-ua-compatible" content="ie=7">
+
+<title>此区有个XeLaTeX 听说能直接调用系统字体—— - TeX/LaTeX/XeLaTeX -  悠闲数学娱乐论坛  - Powered by Discuz!</title>
+
+<meta name="description" content=" 悠闲数学娱乐论坛  本帖最后由 isea 于 2013-4-22 01:24 编辑 但是偶基本没成功过，偶尔成功也是用TeXWorks搞定的到现在，我终于明白了\usepackage{fontspec}宏包在win7 ... - Discuz! Board">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="thread.css" media="all">
+</head><body id="viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="header">
+<div class="wrap s_clear">
+<h2><a indepth="true" href="index.html" title="悠闲数学娱乐论坛"><img src="k.png" alt="悠闲数学娱乐论坛" border="0"></a></h2>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="nav">
+<a indepth="true" href="index.html">悠闲数学娱乐论坛</a> » <a indepth="true" href="forum-19-1.html">TeX/LaTeX/XeLaTeX</a> » 此区有个XeLaTeX 听说能直接调用系统字体——</div>
+
+<div id="ad_text"></div><div id="wrap" class="wrap s_clear threadfix">
+    <div id="headsearch" class="headsearch">
+        
+
+
+
+        
+    </div>
+<div class="forumcontrol">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-19-1.html">返回列表</a></span>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div id="postlist" class="mainbox viewthread"><div id="post_9088"><table id="pid9088" summary="pid9088" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9088" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9088_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9088_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>1</em><sup>#</sup></strong>
+
+<div class="authorinfo">
+<img class="authicon" id="authicon9088" src="online_member.gif" onclick="showauthor(this, 'userinfo9088');">
+<em id="authorposton9088">发表于 2013-4-15 18:20</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_0"></div>        <div id="ad_thread4_0"></div>
+<div class="postmessage firstpost">
+<div id="threadtitle">
+<h1>此区有个XeLaTeX 听说能直接调用系统字体——</h1>
+</div>
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9088">
+                                <div id="ad_thread3_0"></div>                                <i class="pstatus"> 本帖最后由 isea 于 2013-4-22 01:24 编辑 </i><br>
+<br>
+但是偶基本没成功过，偶尔成功也是用TeXWorks搞定的<br>
+<br>
+<br>
+<br>
+到现在，我终于明白了\usepackage{fontspec}宏包在win7下调用系统字体的！<br>
+<br>
+<br>
+<br>
+如下最简单的<br>
+<br>
+%源文件内容从下面开始<br>
+<br>
+%!TEX TS-program = xelatex<br>
+%~ \XeTeXinputencoding "GB2312"<br>
+% !Mode:: "TeX:UTF-8"<br>
+\\documentclass[a4paper]{article}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;%多了一个\故意的，用时去掉，先<br>
+\usepackage[cm-default]{fontspec}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; %no-math<br>
+%\usepackage{xunicode}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; %不知有什么用，被我标注了&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <br>
+%\usepackage{xltxtra}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; %不知有什么用，被我标注了&nbsp; &nbsp;&nbsp; &nbsp;<br>
+%\usepackage{xeCJK}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; %不知有什么用，被我标注了&nbsp;&nbsp;<br>
+\begin{document}<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;\fontspec{华文彩云}{这是用 XeLaTex 编译效果&nbsp;&nbsp;华文彩云}<br>
+<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;\fontspec{微软雅黑}{这是用 XeLaTex 编译效果 微软雅黑}<br>
+<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;我的中国心<br>
+\\end{document}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; %多了一个\故意的，用时去掉，先<br>
+%源文件内容到上面结束<br>
+<br>
+效果图——<br>
+<br>
+
+
+
+
+<img src="attachments/1304151820cd85cf0fce4a6364.png" onclick="zoom(this, this.src)" id="aimg_1281" alt="smp.png" width="546">
+
+<div class="t_attach">
+ (18.2 KB)<br>
+
+<div class="t_smallfont">2013-4-15 18:20</div></div>
+
+<br>
+<br>
+用 TeXWorks 可以看到效果的，但CTeX套安装下的WinEdt就，一般都不会编译成功的，不是乱码，就是其他初学者（如偶），不明白的问题。<br>
+<br>
+<br>
+<br>
+到现在，我终于明白了！<br>
+<br>
+<br>
+<strong>最最主要的原因是</strong><br>
+<br>
+<br>
+网上的教程 基本都是linux下的，所以直接搬到windows下会出错<br>
+<br>
+<br>
+<br>
+fontspec 用法太简单了，但网上的介绍用法，却写得邪乎，或者不写，说直接调用；windows 下如何调用？但没有说。<br>
+<br>
+经实验，原来是所以直接调用字体就是（系统盘下）C:\Windows\Fonts 文件夹下的文件名！<br>
+如下图（当然，常规两字不要，就是word里看到的字体名称）<br>
+
+
+
+
+<img src="attachments/1304151820e1ea603d65b567a9.png" onclick="zoom(this, this.src)" id="aimg_1280" alt="snap-windows.png" width="351">
+
+<div class="t_attach">
+ (13.6 KB)<br>
+
+<div class="t_smallfont">2013-4-15 18:20</div></div>
+
+<br>
+非字体文件名！如 \fontspec{微软雅黑} 调用微软雅黑，用 \fontspec{msyh} 是不顶用的，但用英文名 \fontspec{Microsoft Yahei Font} 和\fontspec{微软雅黑}等效。<br>
+<br>
+<br>
+<br>
+最后，就是WinEdt 默认不认 UTF-8 （UNICODE里一种）编码，真不可思议！<br>
+修改如下，如果不放心，怕出问题，或有乱码，你再改回来即可。<br>
+[attach]1282[/attach]<br>
+<br>
+更多且更有效的打开方式：<a indepth="true" href="thread-1398-1-1.html" target="_top">http://kkkkuingggg.5d6d.net/thread-1398-1-1.html</a><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9088"></div>
+
+                                                
+                <div id="relate_subject" style="margin-top: 10px; width: 99%;"></div>
+                
+                
+
+</div>
+
+</div>
+
+<div id="ad_thread1_0"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+<div id="ad_interthread"></div></td>
+</tr>
+</tbody></table>
+
+</div><div id="post_9089"><table id="pid9089" summary="pid9089" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9089" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9089_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9089_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>2</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9089" src="online_admin.gif" onclick="showauthor(this, 'userinfo9089')">
+<em id="authorposton9089">发表于 2013-4-15 18:33</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_1"></div>        <div id="ad_thread4_1"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9089">
+                                <div id="ad_thread3_1"></div>                                中文的话，用 xeCJK 吧，里面设置了许多中文相关的东西，也提供了一些选项和命令给你用（自己看说明文档，有中文的）。<br>
+用 xeCJK 就可以去掉 \usepackage{fontspec}，因为 xeCJK 里面会调用它。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9089"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_1"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9090"><table id="pid9090" summary="pid9090" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9090" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9090_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9090_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>3</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9090" src="online_member.gif" onclick="showauthor(this, 'userinfo9090');">
+<em id="authorposton9090">发表于 2013-4-15 18:42</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_2"></div>        <div id="ad_thread4_2"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9090">
+                                <div id="ad_thread3_2"></div>                                呵呵，我主要想表达：此时弄明白了 fontspec 在windows 如何直接调用系统字体了<br>
+<br>
+打印试卷我只用三种中文字体，宋体，黑体，楷书<br>
+<br>
+看了楼上，原来xeCJK，这么牛，以后慢慢学吧，闪，先<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9090"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_2"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9091"><table id="pid9091" summary="pid9091" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9091" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9091_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9091_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>4</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9091" src="online_admin.gif" onclick="showauthor(this, 'userinfo9091')">
+<em id="authorposton9091">发表于 2013-4-15 18:53</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_3"></div>        <div id="ad_thread4_3"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9091">
+                                <div id="ad_thread3_3"></div>                                数学空间早期版本用 CJK，后期也改用了 xeCJK。<br>
+当初用 CJK 的时候为了在封面弄那个华文新魏字体都搞得很麻烦，用 xeCJK 就简单多了。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9091"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_3"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9126"><table id="pid9126" summary="pid9126" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9126" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9126_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9126_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>5</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9126" src="online_member.gif" onclick="showauthor(this, 'userinfo9126');">
+<em id="authorposton9126">发表于 2013-4-16 12:31</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_4"></div>        <div id="ad_thread4_4"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9126">
+                                <div id="ad_thread3_4"></div>                                <i class="pstatus"> 本帖最后由 isea 于 2013-4-16 13:03 编辑 </i><br>
+<br>
+嗯，xeCJK 宏包调用字体也方便，不过，要切换字体，必须定义对应字体的命令才行？有直接简单临时切换字体的方式么？<br>
+<br>
+如<br>
+<br>
+\documentclass[a4paper]{article}<br>
+\usepackage{amsmath,amssymb,amsthm}<br>
+\usepackage{xeCJK}<br>
+<br>
+\setCJKfamilyfont{sls}{STLiti}&nbsp; &nbsp;&nbsp;&nbsp;<br>
+\newcommand{\ls}{\CJKfamily{sls}}&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;%设置华文隶书调用，如{\ls 我的中国心}，只有这种临时切换字体方法吗？<br>
+<br>
+\setCJKfamilyfont{ads}{Adobe Song Std L}&nbsp; &nbsp;&nbsp;&nbsp;<br>
+\newcommand{\ads}{\CJKfamily{ads}}<br>
+\setCJKmainfont{华文彩云}<br>
+\begin{document}<br>
+我的中国心 {\ls 我的中国心} 同第一个我的中国心 {\ads 我的中国心}<br>
+\end{document}<br>
+<br>
+<br>
+对那个xeCJK说明文档看得很迷糊<br>
+<br>
+ctex 下，直接用 \fontspec 调用系统字体，这样看来，ctex 默认处理中文的确很方便新人上手<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9126"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_4"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9127"><table id="pid9127" summary="pid9127" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9127" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9127_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9127_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>6</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9127" src="online_member.gif" onclick="showauthor(this, 'userinfo9127');">
+<em id="authorposton9127">发表于 2013-4-16 13:02</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_5"></div>        <div id="ad_thread4_5"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9127">
+                                <div id="ad_thread3_5"></div>                                擦<br>
+fontspec宏包的说明文档 100多页<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9127"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_5"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9338"><table id="pid9338" summary="pid9338" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">叶剑飞Victor</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9338" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9338_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+叶剑飞Victor
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>336&nbsp;</dd><dt>帖子</dt><dd>95&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>512&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>福建省福州市&nbsp;</dd><dt>在线时间</dt><dd>37 小时&nbsp;</dd><dt>注册时间</dt><dd>2012-8-3&nbsp;</dd><dt>最后登录</dt><dd>2013-5-25&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9338_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="36_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>336&nbsp;</dd><dt>帖子</dt><dd>95&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>7</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9338" src="online_member.gif" onclick="showauthor(this, 'userinfo9338');">
+<em id="authorposton9338">发表于 2013-4-19 14:02</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_6"></div>        <div id="ad_thread4_6"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9338">
+                                <div id="ad_thread3_6"></div>                                <i class="pstatus"> 本帖最后由 叶剑飞Victor 于 2013-4-20 11:27 编辑 </i><br>
+<br>
+xeCJK能够使中英文使用不同字体。<br>
+<br>
+例如：<br>
+中文用“宋体”(SimSun)，英文用“Times New Roman”字体<div class="blockcode"><div id="code0"><ol><li>\setmainfont{Times New Roman}<br>
+</li><li>\setCJKmainfont{SimSun}</li></ol></div><em onclick="copycode($('code0'));">复制代码</em></div><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9338"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_6"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9348"><table id="pid9348" summary="pid9348" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9348" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9348_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9348_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>8</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9348" src="online_member.gif" onclick="showauthor(this, 'userinfo9348');">
+<em id="authorposton9348">发表于 2013-4-19 16:49</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_7"></div>        <div id="ad_thread4_7"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9348">
+                                <div id="ad_thread3_7"></div>                                <div class="quote"><blockquote>xeCJK能够使中英文使用不同字体。<br>
+<br>
+例如：<br>
+中文用“宋体”，英文用“Times New Roman”字体\setmainfont{Times New Roman}<br>
+\setCJKmainfont{SimSun}<br>
+<font size="2"><font color="#999999">叶剑飞Victor 发表于 2013-4-19 14:02</font> </font></blockquote></div>对应默认字体大小如何设置呢？<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9348"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_7"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9351"><table id="pid9351" summary="pid9351" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">hejoseph</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9351" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9351_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+hejoseph
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>627&nbsp;</dd><dt>帖子</dt><dd>43&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>216&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>30&nbsp;</dd><dt>在线时间</dt><dd>1 小时&nbsp;</dd><dt>注册时间</dt><dd>2013-4-19&nbsp;</dd><dt>最后登录</dt><dd>2013-6-4&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo9351_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="27_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>中级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>627&nbsp;</dd><dt>帖子</dt><dd>43&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>9</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9351" src="online_member.gif" onclick="showauthor(this, 'userinfo9351');">
+<em id="authorposton9351">发表于 2013-4-19 17:10</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_8"></div>        <div id="ad_thread4_8"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9351">
+                                <div id="ad_thread3_8"></div>                                <div class="quote"><blockquote>对应默认字体大小如何设置呢？<br>
+<font size="2"><font color="#999999">isea 发表于 2013-4-19 16:49</font> </font></blockquote></div>类似这样<br>
+\renewcommand{\normalsize}{\fontsize{16pt}{\baselineskip}\selectfont}<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9351"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_8"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_9376"><table id="pid9376" summary="pid9376" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">isea</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo9376" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo9376_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+isea
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>4258&nbsp;</dd><dt>威望</dt><dd>1 &nbsp;</dd><dt>阅读权限</dt><dd>90&nbsp;</dd><dt>在线时间</dt><dd>393 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+<a href="http://hi.baidu.com/new/newmov" target="_top" title="查看个人网站">web</a>
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <a name="lastpost"></a><div id="userinfo9376_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="05_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>论坛元老</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>5&nbsp;</dd><dt>帖子</dt><dd>753&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>10</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon9376" src="online_member.gif" onclick="showauthor(this, 'userinfo9376');">
+<em id="authorposton9376">发表于 2013-4-19 22:36</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_9"></div>        <div id="ad_thread4_9"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_9376">
+                                <div id="ad_thread3_9"></div>                                <div class="quote"><blockquote>类似这样<br>
+\renewcommand{\normalsize}{\fontsize{16pt}{\baselineskip}\selectfont}<br>
+<font size="2"><font color="#999999">hejoseph 发表于 2013-4-19 17:10</font> </font></blockquote></div>多谢何版，等稍后几天，有时间了， 测试成熟及心得一块反馈<br>
+<br>
+再次感谢<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_9376"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_9"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+数学公式终极编辑器：<strong>Aurora</strong>，基于LaTeX；<br>
+$\LaTeX$，若习惯命令一定顺手</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div></div>
+
+<div id="postlistreply" class="mainbox viewthread"><div id="post_new" style="display: none;"></div></div>
+
+
+
+
+<div class="forumcontrol s_clear">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-19-1.html">返回列表</a></span>
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="footer">
+<div class="wrap s_clear">
+<div id="footlink">
+
+<p class="smalltext">
+GMT+8, 2013-6-6 19:52.
+</p>
+
+</div>
+
+
+	</div>
+</div>
+
+</body></html>
