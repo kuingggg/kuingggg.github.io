@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script src="mjxset.js"></script>
+<script src="mjx3/tex-svg.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta http-equiv="x-ua-compatible" content="ie=7">
+
+<title>关于用柯西收敛准则证明自然数平方和数列存在极限 - 高等数学讨论 -  悠闲数学娱乐论坛  - Powered by Discuz!</title>
+
+<meta name="description" content=" 悠闲数学娱乐论坛  本帖最后由 都市侠影 于 2012-7-6 22:48 编辑 今天群里有人讨论如何用柯西收敛准则证明数列 $a_n=\sum_{k=1}^n\frac{1}{k^2}$ 存在极限。理论上，只要是有极 ... - Discuz! Board">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="thread.css" media="all">
+</head><body id="viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="header">
+<div class="wrap s_clear">
+<h2><a indepth="true" href="index.html" title="悠闲数学娱乐论坛"><img src="k.png" alt="悠闲数学娱乐论坛" border="0"></a></h2>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="nav">
+<a indepth="true" href="index.html">悠闲数学娱乐论坛</a> » <a indepth="true" href="forum-17-1.html">高等数学讨论</a> » 关于用柯西收敛准则证明自然数平方和数列存在极限</div>
+
+<div id="ad_text"></div><div id="wrap" class="wrap s_clear threadfix">
+    <div id="headsearch" class="headsearch">
+        
+
+
+
+        
+    </div>
+<div class="forumcontrol">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-17-1.html">返回列表</a></span>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div id="postlist" class="mainbox viewthread"><div id="post_2879"><table id="pid2879" summary="pid2879" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">都市侠影</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo2879" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo2879_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+都市侠影
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>647&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>在线时间</dt><dd>72 小时&nbsp;</dd><dt>注册时间</dt><dd>2012-6-5&nbsp;</dd><dt>最后登录</dt><dd>2012-12-7&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo2879_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="27_avatar_middle_001.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>1</em><sup>#</sup></strong>
+
+<div class="authorinfo">
+<img class="authicon" id="authicon2879" src="online_member.gif" onclick="showauthor(this, 'userinfo2879');">
+<em id="authorposton2879">发表于 2012-7-6 22:37</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_0"></div>        <div id="ad_thread4_0"></div>
+<div class="postmessage firstpost">
+<div id="threadtitle">
+<h1>关于用柯西收敛准则证明自然数平方和数列存在极限</h1>
+</div>
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_2879">
+                                <div id="ad_thread3_0"></div>                                <i class="pstatus"> 本帖最后由 都市侠影 于 2012-7-6 22:48 编辑 </i><br>
+<br>
+今天群里有人讨论如何用柯西收敛准则证明数列 $a_n=\sum_{k=1}^n\frac{1}{k^2}$ 存在极限。<br>
+理论上，只要是有极限，都可以用这个准则进行证明，只是有些时候比较麻烦而已。对于这里提到的数列，可以这样来证明：<br>
+\begin{align}<br>
+\begin{aligned}<br>
+a_{n+m}-a_n&amp;=\sum_{k=1}^{m}\frac{1}{(n+k)^2} \\<br>
+&amp;&lt;\sum_{k=1}^{m}\frac{1}{(n+k)(n+k-1)} \\<br>
+&amp;=\sum_{k=1}^{m}\Big(\frac{1}{n+k-1}-\frac{1}{n+k}\Big) \\<br>
+&amp;=\frac{1}{n}-\frac{1}{n+m} \\<br>
+&amp;&lt;\frac{1}{n}<br>
+\end{aligned}<br>
+\end{align}<br>
+如此一来，对于预先给定的任意小的正数 $\varepsilon$，只要取满足 $\frac{1}{n}&lt;\frac{\varepsilon}{2}$ 的正整数 $N$，那么在第 $N$ 项后的任意两项 $a_p$、$a_q$，有<br>
+ \[<br>
+|a_p-a_q|&lt;|(a_p-a_N)+(a_N-a_q)|\leqslant |a_p-a_N|+|a_N-a_q|&lt;\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon<br>
+\]<br>
+证毕。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_2879"></div>
+
+                                                
+                <div id="relate_subject" style="margin-top: 10px; width: 99%;"></div>
+                
+                
+                <div class="modact">本主题由 kuing 于 2012-7-6 22:42 移动</div>
+</div>
+
+</div>
+
+<div id="ad_thread1_0"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+<div id="ad_interthread"></div></td>
+</tr>
+</tbody></table>
+</div><div id="post_2921"><table id="pid2921" summary="pid2921" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">都市侠影</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo2921" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo2921_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+都市侠影
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>647&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>在线时间</dt><dd>72 小时&nbsp;</dd><dt>注册时间</dt><dd>2012-6-5&nbsp;</dd><dt>最后登录</dt><dd>2012-12-7&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo2921_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="27_avatar_middle_001.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>227&nbsp;</dd><dt>帖子</dt><dd>115&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>2</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon2921" src="online_member.gif" onclick="showauthor(this, 'userinfo2921');">
+<em id="authorposton2921">发表于 2012-7-11 18:33</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_1"></div>        <div id="ad_thread4_1"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_2921">
+                                <div id="ad_thread3_1"></div>                                网页公式怎么不显示了，一堆代码？<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_2921"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_1"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_2922"><table id="pid2922" summary="pid2922" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo2922" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo2922_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <a name="lastpost"></a><div id="userinfo2922_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>3</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon2922" src="online_admin.gif" onclick="showauthor(this, 'userinfo2922')">
+<em id="authorposton2922">发表于 2012-7-11 18:49</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_2"></div>        <div id="ad_thread4_2"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_2922">
+                                <div id="ad_thread3_2"></div>                                应该是 mathjax 抽了，你试下进 mathjax 主页看能不能打开<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_2922"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_2"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div></div>
+
+<div id="postlistreply" class="mainbox viewthread"><div id="post_new" style="display: none;"></div></div>
+
+
+
+
+<div class="forumcontrol s_clear">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-17-1.html">返回列表</a></span>
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="footer">
+<div class="wrap s_clear">
+<div id="footlink">
+
+<p class="smalltext">
+GMT+8, 2013-6-6 19:50.
+</p>
+
+</div>
+
+
+	</div>
+</div>
+
+</body></html>
