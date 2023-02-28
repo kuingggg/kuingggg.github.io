@@ -1,0 +1,1374 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script src="mjxset.js"></script>
+<script src="mjx3/tex-svg.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta http-equiv="x-ua-compatible" content="ie=7">
+
+<title>公式中加颜色、加粗、加下划线、调大小等操作汇总 - TeX/LaTeX/XeLaTeX -  悠闲数学娱乐论坛  - Powered by Discuz!</title>
+
+<meta name="description" content=" 悠闲数学娱乐论坛 在论坛上，正文普通文字加颜色、加粗、下划线等可以在发贴回贴时通过点击编译界面上的按钮得到，但在公式里似乎不可以这样，否则公式可能会因里头夹杂了Discuz!代 ... - Discuz! Board">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="thread.css" media="all">
+</head><body id="viewthread" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<div id="header">
+<div class="wrap s_clear">
+<h2><a indepth="true" href="index.html" title="悠闲数学娱乐论坛"><img src="k.png" alt="悠闲数学娱乐论坛" border="0"></a></h2>
+
+
+</div>
+</div>
+
+
+
+
+
+<div id="nav">
+<a indepth="true" href="index.html">悠闲数学娱乐论坛</a> » <a indepth="true" href="forum-19-1.html">TeX/LaTeX/XeLaTeX</a> » 公式中加颜色、加粗、加下划线、调大小等操作汇总</div>
+
+<div id="ad_text"></div><div id="wrap" class="wrap s_clear threadfix">
+    <div id="headsearch" class="headsearch">
+        
+
+
+
+        
+    </div>
+<div class="forumcontrol">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-19-1.html">返回列表</a></span>
+
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+<div id="postlist" class="mainbox viewthread"><div id="post_319"><table id="pid319" summary="pid319" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo319" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo319_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo319_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>1</em><sup>#</sup></strong>
+
+<div class="authorinfo">
+<img class="authicon" id="authicon319" src="online_admin.gif" onclick="showauthor(this, 'userinfo319')">
+<em id="authorposton319">发表于 2011-10-8 22:19</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_0"></div>        <div id="ad_thread4_0"></div>
+<div class="postmessage firstpost">
+<div id="threadtitle">
+<h1>公式中加颜色、加粗、加下划线、调大小等操作汇总</h1>
+</div>
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_319">
+                                <div id="ad_thread3_0"></div>                                在论坛上，正文普通文字加颜色、加粗、下划线等可以在发贴回贴时通过点击编译界面上的按钮得到，但在公式里似乎不可以这样，否则公式可能会因里头夹杂了Discuz!代码而无法识别，以致于显不出公式。<br>
+所以需要用latex里的这些方法，下面一一列出<br>
+<br>
+公式中加颜色：<br>
+\color{颜色名}{需要加颜色的部分}<br>
+例：<br>
+a+\color{red}{b+c}+\color{yellow}{d}+\color{blue}{e+f+}g\color{gray}{+h}\color{green}{+i+j}\color{orange}{+k}+l+m<br>
+效果\[<br>
+a+\color{red}{b+c}+\color{yellow}{d}+\color{blue}{e+f+}g\color{gray}{+h}\color{green}{+i+j}\color{orange}{+k}+l+m<br>
+\]总之，懂一点英文，问题不大。<br>
+<br>
+公式中加粗，用于向量、矩阵：<br>
+\boldsymbol{需要加的部分}<br>
+例：<br>
+\boldsymbol{a}=(a_1,a_2,a_3), \boldsymbol b=(b_1,b_2,b_3)<br>
+效果\[<br>
+\boldsymbol{a}=(a_1,a_2,a_3), \boldsymbol b=(b_1,b_2,b_3)<br>
+\]再输一个叉乘，效果\[<br>
+\boldsymbol a\times\boldsymbol b = \begin{vmatrix}\boldsymbol i &amp; \boldsymbol j &amp; \boldsymbol k \\ a_1&amp;a_2&amp;a_3\\b_1&amp;b_2&amp;b_3\end{vmatrix}<br>
+\]参考：http://kkkkuingggg.5d6d.com/thread-69-1-1.html<br>
+另外，如果用 \bf 或 \textbf，则得到的是直立体的加粗。<br>
+比如 {\bf a}=(a_1,a_2,a_3) 或 \textbf{a}=(a_1,a_2,a_3) 都将得到 ${\bf a}=(a_1,a_2,a_3)$，文字尚可，但不太适合用于向量或矩阵。<br>
+<br>
+公式中加下划线：<br>
+\underline{需加下划线部分}<br>
+例：<br>
+a+\underline{b}+c+\underline{d+e}+\underline{f+g+}h<br>
+效果\[<br>
+a+\underline{b}+c+\underline{d+e}+\underline{f+g+}h<br>
+\]<br>
+公式中调节大小：<br>
+内容较多，详情见：http://kkkkuingggg.5d6d.com/thread-50-1-1.html<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_319"></div>
+
+                                                
+                <div id="relate_subject" style="margin-top: 10px; width: 99%;"></div>
+                
+                
+
+</div>
+
+</div>
+
+<div id="ad_thread1_0"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+<div id="ad_interthread"></div></td>
+</tr>
+</tbody></table>
+</div><div id="post_320"><table id="pid320" summary="pid320" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo320" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo320_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo320_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>2</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon320" src="online_admin.gif" onclick="showauthor(this, 'userinfo320')">
+<em id="authorposton320">发表于 2011-10-8 22:25</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_1"></div>        <div id="ad_thread4_1"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_320">
+                                <div id="ad_thread3_1"></div>                                删除线是否需要？<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_320"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_1"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1135"><table id="pid1135" summary="pid1135" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1135" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1135_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1135_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>3</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1135" src="online_admin.gif" onclick="showauthor(this, 'userinfo1135')">
+<em id="authorposton1135">发表于 2011-11-10 19:11</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_2"></div>        <div id="ad_thread4_2"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1135">
+                                <div id="ad_thread3_2"></div>                                顶一下<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1135"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_2"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1136"><table id="pid1136" summary="pid1136" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">戊概念·五</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1136" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1136_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+戊概念·五
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>55&nbsp;</dd><dt>帖子</dt><dd>179&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>943&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>在线时间</dt><dd>48 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-10-27&nbsp;</dd><dt>最后登录</dt><dd>2013-4-26&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1136_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="55_avatar_middle_001.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>55&nbsp;</dd><dt>帖子</dt><dd>179&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>4</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1136" src="online_member.gif" onclick="showauthor(this, 'userinfo1136');">
+<em id="authorposton1136">发表于 2011-11-10 19:21</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_3"></div>        <div id="ad_thread4_3"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1136">
+                                <div id="ad_thread3_3"></div>                                <strong> 2# <i>kuing</i> </strong><br>
+<br>
+<br>
+删除线是？？？<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1136"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_3"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+Well,鄙人是前来仰望各位数学大牛的。——一只嗜好观摩各类才人的笨蛋刺猬</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1140"><table id="pid1140" summary="pid1140" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">只如初见</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1140" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1140_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+只如初见
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>36&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>10&nbsp;</dd><dt>在线时间</dt><dd>1 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-11-8&nbsp;</dd><dt>最后登录</dt><dd>2011-11-14&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1140_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="84_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>新手上路</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>5</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1140" src="online_member.gif" onclick="showauthor(this, 'userinfo1140');">
+<em id="authorposton1140">发表于 2011-11-11 10:13</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_4"></div>        <div id="ad_thread4_4"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1140">
+                                <div id="ad_thread3_4"></div>                                \colro{green}{kuing}<br>
+<br>
+<br>
+<br>
+问题：怎么设置既加色又粗体。<img src="e113.gif" smilieid="soso_e113" alt="" border="0"><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1140"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_4"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1141"><table id="pid1141" summary="pid1141" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">只如初见</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1141" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1141_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+只如初见
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>36&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>10&nbsp;</dd><dt>在线时间</dt><dd>1 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-11-8&nbsp;</dd><dt>最后登录</dt><dd>2011-11-14&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1141_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="84_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>新手上路</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>6</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1141" src="online_member.gif" onclick="showauthor(this, 'userinfo1141');">
+<em id="authorposton1141">发表于 2011-11-11 10:14</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_5"></div>        <div id="ad_thread4_5"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1141">
+                                <div id="ad_thread3_5"></div>                                \color{green}{kuing}<img src="e127.gif" smilieid="soso_e127" alt="" border="0"><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1141"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_5"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1142"><table id="pid1142" summary="pid1142" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">只如初见</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1142" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1142_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+只如初见
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>36&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>10&nbsp;</dd><dt>在线时间</dt><dd>1 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-11-8&nbsp;</dd><dt>最后登录</dt><dd>2011-11-14&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1142_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="84_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>新手上路</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>7</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1142" src="online_member.gif" onclick="showauthor(this, 'userinfo1142');">
+<em id="authorposton1142">发表于 2011-11-11 10:17</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_6"></div>        <div id="ad_thread4_6"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1142">
+                                <div id="ad_thread3_6"></div>                                \color{green}{b+c}&nbsp; &nbsp;\color{green}{kkkkingggg}<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1142"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_6"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1143"><table id="pid1143" summary="pid1143" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">只如初见</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1143" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1143_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+只如初见
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>36&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>10&nbsp;</dd><dt>在线时间</dt><dd>1 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-11-8&nbsp;</dd><dt>最后登录</dt><dd>2011-11-14&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1143_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="84_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>新手上路</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>84&nbsp;</dd><dt>帖子</dt><dd>7&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>8</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1143" src="online_member.gif" onclick="showauthor(this, 'userinfo1143');">
+<em id="authorposton1143">发表于 2011-11-11 10:18</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_7"></div>        <div id="ad_thread4_7"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1143">
+                                <div id="ad_thread3_7"></div>                                \color{red}{b+c}<br>
+<br>
+<br>
+ <img src="e117.gif" smilieid="soso_e117" alt="" border="0"><!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1143"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_7"></div></td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1144"><table id="pid1144" summary="pid1144" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1144" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1144_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1144_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>9</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1144" src="online_admin.gif" onclick="showauthor(this, 'userinfo1144')">
+<em id="authorposton1144">发表于 2011-11-11 10:23</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_8"></div>        <div id="ad_thread4_8"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1144">
+                                <div id="ad_thread3_8"></div>                                <div class="quote"><blockquote>问题：怎么设置既加色又粗体。<img src="e113.gif" smilieid="soso_e113" alt="" border="0"><br>
+<font size="2"><font color="#999999">只如初见 发表于 2011-11-11 10:13</font> </font></blockquote></div>\[\Large kkkk \color{red}{ kkkk \boldsymbol{kkkk} kkkk} kkkk\]<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1144"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_8"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1145"><table id="pid1145" summary="pid1145" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1145" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1145_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1145_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>10</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1145" src="online_admin.gif" onclick="showauthor(this, 'userinfo1145')">
+<em id="authorposton1145">发表于 2011-11-11 10:33</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_9"></div>        <div id="ad_thread4_9"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1145">
+                                <div id="ad_thread3_9"></div>                                <div class="quote"><blockquote> 2# kuing <br>
+<br>
+<br>
+删除线是？？？<br>
+<font size="2"><font color="#999999">戊概念·五 发表于 2011-11-10 19:21</font> </font></blockquote></div>这里没法做出效果<br>
+具体地，参考 <a href="http://blog.sina.com.cn/s/blog_77f93ba80100vstp.html" target="_top">http://blog.sina.com.cn/s/blog_77f93ba80100vstp.html</a> 中间的图。<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1145"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_9"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_1146"><table id="pid1146" summary="pid1146" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">戊概念·五</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo1146" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo1146_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+戊概念·五
+<em>当前离线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>55&nbsp;</dd><dt>帖子</dt><dd>179&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>943&nbsp;</dd><dt>威望</dt><dd>0 &nbsp;</dd><dt>阅读权限</dt><dd>50&nbsp;</dd><dt>在线时间</dt><dd>48 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-10-27&nbsp;</dd><dt>最后登录</dt><dd>2013-4-26&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo1146_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="55_avatar_middle_001.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>高级会员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>55&nbsp;</dd><dt>帖子</dt><dd>179&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>11</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon1146" src="online_member.gif" onclick="showauthor(this, 'userinfo1146');">
+<em id="authorposton1146">发表于 2011-11-11 11:29</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_10"></div>        <div id="ad_thread4_10"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_1146">
+                                <div id="ad_thread3_10"></div>                                <strong> 10# <i>kuing</i> </strong><br>
+<br>
+<br>
+懂了，O(∩_∩)O谢谢！<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_1146"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_10"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+Well,鄙人是前来仰望各位数学大牛的。——一只嗜好观摩各类才人的笨蛋刺猬</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4060"><table id="pid4060" summary="pid4060" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4060" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4060_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <div id="userinfo4060_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>12</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4060" src="online_admin.gif" onclick="showauthor(this, 'userinfo4060')">
+<em id="authorposton4060">发表于 2012-8-28 19:51</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_11"></div>        <div id="ad_thread4_11"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4060">
+                                <div id="ad_thread3_11"></div>                                仅用作 MathJax 下的删除线：<br>
+先用 $\verb"\(\require{cancel}\)"$ 加载 cancel.js。\(\require{cancel}\)<br>
+然后用 \cancel{...}、\bcancel{...}、\xcancel{...}、\cancelto{...}{...} 来在数学公式作画删除线。<br>
+比如代码：<br>
+\(\verb"$\cancel kuing + \cancel{kuing}+\bcancel{kuing}+\xcancel{kuing}"\)<br>
+\(\verb"+\cancelto{kkkk}{kuing}+\cancelto kuing$"\) <br>
+显示<br>
+$\cancel kuing + \cancel{kuing}+\bcancel{kuing}+\xcancel{kuing}+\cancelto{kkkk}{kuing}+\cancelto kuing$<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4060"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_11"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div><div id="post_4061"><table id="pid4061" summary="pid4061" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="postauthor">
+<div class="postinfo">
+<a target="_top" href="#" style="margin-left: 20px; font-weight: 800;">kuing</a>
+
+</div>
+<div class="popupmenu_popup userinfopanel" id="userinfo4061" style="display: none; position: absolute; margin-top: -11px;">
+<div class="popavatar">
+<div id="userinfo4061_ma"></div>
+
+</div>
+<div class="popuserinfo">
+<p>
+kuing
+<em>当前在线
+</em>
+</p>
+
+<dl class="s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd><dt>精华</dt><dd>0&nbsp;</dd><dt>积分</dt><dd>25208&nbsp;</dd><dt>威望</dt><dd>6 &nbsp;</dd><dt>阅读权限</dt><dd>200&nbsp;</dd><dt>性别</dt><dd>男&nbsp;</dd><dt>来自</dt><dd>广东广州&nbsp;</dd><dt>在线时间</dt><dd>4648 小时&nbsp;</dd><dt>注册时间</dt><dd>2011-9-25&nbsp;</dd><dt>最后登录</dt><dd>2013-6-6&nbsp;</dd></dl>
+<div class="imicons">
+
+</div>
+<div id="avatarfeed"><span id="threadsortswait"></span></div>
+</div>
+</div>
+ <a name="lastpost"></a><div id="userinfo4061_a">
+<div class="avatar" style="text-align: center; margin-left: 0px; margin-right: 0px;"><a href="#" target="_top"><img src="01_avatar_middle.jpg" onerror="this.onerror=null;this.src='none.gif'"></a></div>
+<p><em>管理员</em></p>
+</div>
+<p></p>
+<dl class="profile s_clear"><dt>UID</dt><dd>1&nbsp;</dd><dt>帖子</dt><dd>3992&nbsp;</dd></dl></td>
+<td class="postcontent">
+<div class="postinfo">
+<div class="posterinfo">
+                <strong><em>13</em><sup>#</sup></strong>
+<div class="pagecontrol">
+</div>
+<div class="authorinfo">
+<img class="authicon" id="authicon4061" src="online_admin.gif" onclick="showauthor(this, 'userinfo4061')">
+<em id="authorposton4061">发表于 2012-8-28 20:00</em>
+
+
+                </div>
+</div>
+</div>
+<div class="defaultpost">
+<div id="ad_thread2_12"></div>        <div id="ad_thread4_12"></div>
+<div class="postmessage ">
+<div class="t_msgfontfix">
+                    <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                        <tbody><tr><td class="t_msgfont" id="postmessage_4061">
+                                <div id="ad_thread3_12"></div>                                \[\xcancel{\sum\sqrt{\frac a{b+c}}&gt;2}\]<!--++ plugin_code qcomic begin-->
+<!--++ plugin_code qcomic end--></td></tr></tbody></table>
+</div>
+
+<div id="post_rate_div_4061"></div>
+
+                </div>
+
+</div>
+
+<div id="ad_thread1_12"></div><div class="signatures" style="">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td>
+基本信息：kuing，GG，19880618~?，地道广州人，高中毕业，无业游民，不等式爱好者，论坛混混；<br>
+现状：冇钱又冇样、冇型又冇款、冇身材又冇文采、冇学历又冇能力、冇高度冇速度冇力度兼夹冇野做！（粤语）</td>
+</tr>
+</tbody></table>
+</div>
+</td>
+</tr>
+<tr>
+<td class="postauthor"></td>
+<td class="postcontent">
+        <div class="postactions">
+<div class="postact s_clear">
+<em>
+
+
+</em>
+<p>
+
+</p>
+</div>
+</div>
+</td>
+</tr>
+<tr class="threadad">
+<td class="postauthor"></td>
+<td class="adcontent">
+</td>
+</tr>
+</tbody></table>
+</div></div>
+
+<div id="postlistreply" class="mainbox viewthread"><div id="post_new" style="display: none;"></div></div>
+
+
+
+
+<div class="forumcontrol s_clear">
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="modaction">
+</td>
+<td>
+<span class="pageback"><a indepth="true" href="forum-19-1.html">返回列表</a></span>
+
+
+</td>
+</tr>
+</tbody></table>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div id="footer">
+<div class="wrap s_clear">
+<div id="footlink">
+
+<p class="smalltext">
+GMT+8, 2013-6-6 19:53.
+</p>
+
+</div>
+
+
+	</div>
+</div>
+
+</body></html>
