@@ -4,5 +4,5 @@ document.getElementsByTagName("head")[0].appendChild(jss);
 
 var mee = document.createElement("meta");
 mee.name = "viewport";
-mee.content = "width=device-width, initial-scale=1;
+mee.content = "width=device-width, initial-scale=1";
 document.getElementsByTagName("head")[0].appendChild(mee);
