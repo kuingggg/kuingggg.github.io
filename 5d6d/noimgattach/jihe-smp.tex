@@ -1,0 +1,67 @@
+\documentclass[a4paper]{ctexart}%icle}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\renewcommand{\baselinestretch}{1.67}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+
+\begin{document}
+
+
+如图1，将三角板放在正方形$ABCD$上，使三角板的直角顶点$E$与正方形$ABCD$的顶点 重合．三角板的一边交$CD$于点$F$ ，另一边$CB$ 的延长线于点$G$．
+
+
+（1）求证：$EF=FG$；
+
+
+（2）如图2，移动三角板，使顶点$E$始终在正方形 的对角线 上，其他条件不变，（1）中的结论是否仍然成立？若成立，请给予证明；若不成立，请说明理由；
+
+
+（3）%如图3，
+将（2）中的“正方形$ABCD$ ”改为“矩形$ABCD$ ”，且使三角板的一边经过点$B$，其他条件不变，若$AB=a,BC=b$，求$\dfrac{EF}{EG}$ 的值．
+
+
+%忘记标注代码含义，以后补吧
+\begin{tikzpicture}[scale=2]
+  \draw (-1.5,0)--(0,0)node[below] {$B$};
+  \draw (0,0)--(2,0)node[below]{$C$}--(2,2)node[above]{$D$}-- (0,2)node[above]{$A(E)$}--cycle;
+  \draw (0,2)--(2,0);
+              \path [draw,name path=AG] (0,2)--(-1.5,-0.5);
+              \path [draw,name path=BG] (0,0)--(-1.5,0);
+              \path [name intersections={of=AG and BG,by=G}];
+             \node[label=below:$G$] at (G){};
+             \coordinate (F) at ($ (0,2)!1! 90:(G) $);
+             \draw (0,2)--(F)node[right]{$F$};
+  \node at (.25,-.75) [below]{图1};
+\end{tikzpicture}
+\qquad\begin{tikzpicture}[scale=2]
+  \draw (-1.5,0)--(0,0)node[below] {$B$};
+  \draw (0,0)--(2,0)node[below]{$C$}--(2,2)node[above]{$D$}-- (0,2)node[above]{$A$}--cycle;
+  \draw (0,2)--(.5,1.5)node[left]{$E$}--(2,0);
+              \path [draw,name path=EG] (0.5,1.5)--(-.5,-0.5);
+              \path [draw,name path=BG] (0,0)--(-1.5,0);
+              \path [name intersections={of=EG and BG,by=G}];
+             \node[label=190:$G$] at (G){};
+             \coordinate (F) at ($ (0.5,1.5)!1! 90:(G) $);
+             \draw  (0.5,1.5)--(F)node[right]{$F$};
+  \node at (.25,-.75) [below]{图2};
+\end{tikzpicture}
+
+
+%\begin{tikzpicture}    %未完成 明天再说 
+%  \draw (-1.5,0)--(0,0)node[below] {$B$};
+%  \draw (0,0)--(2,0)node[below]{$C$}--(2,1)node[above]{$D$}-- (0,1)node[above]{$A$}--cycle;
+%  \draw (0,2)--(.5,1.5)node[left]{$E$}--(2,0);
+%              \path [draw,name path=EG] (0.5,1.5)--(-.5,-0.5);
+%              \path [draw,name path=BG] (0,0)--(-1.5,0);
+%              \path [name intersections={of=EG and BG,by=G}];
+%             \node[label=190:$G$] at (G){};
+%             \coordinate (F) at ($ (0.5,1.5)!1! 90:(G) $);
+%             \draw  (0.5,1.5)--(F)node[right]{$F$};
+%  \node at (.25,-.75) [below]{图3};
+%\end{tikzpicture}
+
+
+
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[a4paper]{ctexart}%{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+\begin{document}
+
+某空间几何体的三视图如图所示，则该几何体的表面为
+
+
+  \begin{tikzpicture}[line width=0.75,scale=2.5]
+  \draw  (0,0) --(1,0)--(1,1)--(0,1)--(0,0)--(1,1)(1,0)--(0,1);
+  \draw[very thin] (1,0)--(1.2,0)[yshift=1cm] (1,0)--(1.2,0)[xshift=1.5cm,yshift=1.5cm] (1,0)--(1.2,0)[yshift=-1cm] (1,0)--(1.2,0);
+  \draw[very thin] (0,1)--(0,1.2)[xshift=1cm](0,1)--(0,1.2);
+  \begin{scope}[->,very thin]
+  \draw (1.1,0.4)--(1.1,0.025);
+   \draw (1.1,0.6)--(1.1,0.975);
+ \draw (2.6,1.9)--(2.6,1.525);
+ \draw (2.6,2.1)--(2.6,2.475);
+  \draw (0.4,1.1)--(0.025,1.1);
+ \draw (0.6,1.1)--(0.975,1.1);
+ \node at (0.5,1.1) {6};
+  \node at (1.1,0.5) {6};
+  \node at (2.6,2) {6};
+  \end{scope}
+  \node at (0.5,0) [below]{俯视图};
+  \node at (2,1.5) [below]{左视图};
+  \node at (0.5,1.5) [below]{主视图};
+  \draw (0,1.5)--(1,1.5)--(1,2.5)--(0,2.5)--(0,1.5)(0,2.5)--(0.5,3.17)--(1,2.5)[xshift=1.5cm](0,1.5)--(1,1.5)--(1,2.5)--(0,2.5)--(0,1.5)(0,2.5)--(0.5,3.17)--(1,2.5);
+  %开始画标记长5
+    \coordinate (a) at (1,2.5);
+    \coordinate (b) at (0.5,3.17);
+  \coordinate (c) at ($ (a)!0.2! -90:(b) $);
+  \coordinate (d) at ($ (b)!0.2! 90:(a) $);
+     \coordinate (c1) at ($ (a)!0.5!0:(c) $);
+     \coordinate (d1) at ($ (b)!0.5!0:(d) $);
+   \coordinate (e) at ($ (c1)!0.4! 0:(d1) $);
+   \coordinate (f) at ($ (c1)!0.6! 0:(d1) $);
+      \coordinate (m) at ($ (c1)!0.5! 0:(d1) $);
+   \draw[very thin] (a)--(c);
+   \draw[very thin] (b)--(d);
+   \begin{scope}[->,very thin]
+   \draw (e)--(c1);
+   \draw (f)--(d1);
+   \end{scope}
+  \node  at (m){5};
+    %画标记长5结束
+  \end{tikzpicture}
+
+\end{document}

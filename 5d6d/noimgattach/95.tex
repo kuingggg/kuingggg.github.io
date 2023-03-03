@@ -1,0 +1,410 @@
+%!TEX TS-program = xelatex
+% !Mode:: "TeX:UTF-8"
+\documentclass[a4paper]{ctexart}%{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[inline]{enumitem}
+\renewcommand{\baselinestretch}{1.67}
+\pagestyle{empty}
+
+\usepackage{xeCJK}
+            \newCJKfontfamily\Kaiti{Adobe Kaiti Std}
+            \newCJKfontfamily\Heiti{Adobe Heiti Std}
+\setCJKmainfont[BoldFont={Adobe Heiti Std},ItalicFont={Adobe Kaiti Std}]{Adobe Song Std} % 粗体与斜体的替代
+
+%            \newcommand{\sanhao}{\fontsize{16.1pt}{\baselineskip}\selectfont}    % 三号
+%            \newcommand{\sihao}{\fontsize{14.1pt}{\baselineskip}\selectfont}        % 四号
+\punctstyle{kaiming}
+
+\usepackage{tikz}
+\usetikzlibrary{calc,intersections,through,backgrounds}
+%\usepackage{picinpar}    % picinpar 是用来调整图片位置
+\usepackage{esvect}       %向量\vv
+\usepackage{stmaryrd}  %平行\sslash
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newfontfamily\CM{Cambria Math}                                                                                          %编号圈1 到圈10
+\newcommand{\cmcirc}[1]{\pgfmathparse{
+                ifthenelse(#1 > 0 && #1 < 21, Hex(9311+#1), Hex(9450))
+                }{\CM{\symbol{"\pgfmathresult}}}}
+\newcommand{\cmcircblk}[1]{\pgfmathparse{
+                ifthenelse(#1 > 0 && #1 < 11, Hex(10101+#1),
+                                       ifthenelse(#1 > 10 && #1 < 21, Hex(9450-10+#1),
+                                                                           Hex(9471))
+                                      )
+                }{\CM{\symbol{"\pgfmathresult}}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter                   %直立\pi
+ \newcommand{\allmodesymb}[2]{\relax\ifmmode{\mathchoice
+ {\mbox{\fontsize{\tf@size}{\tf@size}#1{#2}}}
+ {\mbox{\fontsize{\tf@size}{\tf@size}#1{#2}}}
+ {\mbox{\fontsize{\sf@size}{\sf@size}#1{#2}}}
+ {\mbox{\fontsize{\ssf@size}{\ssf@size}#1{#2}}}}
+ \else
+ \mbox{#1{#2}}\fi}
+ \makeatother
+
+ \newfontfamily\CMU{CMU Serif}
+% \newcommand{\upalpha}{\allmodesymb{\CMU}{\symbol{"03B1}}}
+% \newcommand{\upbeta}{\allmodesymb{\CMU}{\symbol{"03B2}}}
+% \newcommand{\upgamma}{\allmodesymb{\CMU}{\symbol{"03B3}}}
+% \newcommand{\updelta}{\allmodesymb{\CMU}{\symbol{"03B4}}}
+% \newcommand{\upepsilon}{\allmodesymb{\CMU}{\symbol{"03F5}}}
+% \newcommand{\upzeta}{\allmodesymb{\CMU}{\symbol{"03B6}}}
+% \newcommand{\upeta}{\allmodesymb{\CMU}{\symbol{"03B7}}}
+% \newcommand{\uptheta}{\allmodesymb{\CMU}{\symbol{"03B8}}}
+% \newcommand{\upiota}{\allmodesymb{\CMU}{\symbol{"03B9}}}
+% \newcommand{\upkappa}{\allmodesymb{\CMU}{\symbol{"03BA}}}
+% \newcommand{\uplambda}{\allmodesymb{\CMU}{\symbol{"03BB}}}
+% \newcommand{\upmu}{\allmodesymb{\CMU}{\symbol{"03BC}}}
+% \newcommand{\upnu}{\allmodesymb{\CMU}{\symbol{"03BD}}}
+% \newcommand{\upxi}{\allmodesymb{\CMU}{\symbol{"03BE}}}
+% \newcommand{\upomicron}{\allmodesymb{\CMU}{\symbol{"03BF}}}
+ \newcommand{\uppi}{\allmodesymb{\CMU}{\symbol{"03C0}}}
+% \newcommand{\uprho}{\allmodesymb{\CMU}{\symbol{"03C1}}}
+% \newcommand{\upsigma}{\allmodesymb{\CMU}{\symbol{"03C3}}}
+% \newcommand{\uptau}{\allmodesymb{\CMU}{\symbol{"03C4}}}
+% \newcommand{\upupsilon}{\allmodesymb{\CMU}{\symbol{"03C5}}}
+% \newcommand{\upphi}{\allmodesymb{\CMU}{\symbol{"03D5}}}
+% \newcommand{\upchi}{\allmodesymb{\CMU}{\symbol{"03C7}}}
+% \newcommand{\uppsi}{\allmodesymb{\CMU}{\symbol{"03C8}}}
+% \newcommand{\upomega}{\allmodesymb{\CMU}{\symbol{"03C9}}}
+% \newcommand{\upvarepsilon}{\allmodesymb{\CMU}{\symbol{"03B5}}}
+% \newcommand{\upvartheta}{\allmodesymb{\CMU}{\symbol{"03D1}}}
+% %\newcommand{\upvarpi}{\allmodesymb{\CMU}{\symbol{"03D6}}}
+% \newcommand{\upvarrho}{\allmodesymb{\CMU}{\symbol{"03F1}}}
+% \newcommand{\upvarsigma}{\allmodesymb{\CMU}{\symbol{"03C2}}}
+% \newcommand{\upvarphi}{\allmodesymb{\CMU}{\symbol{"03C6}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 填空的横线
+\newcommand{\hhh}[1][2.5]{\,\underline{\hbox to #1cm{}}\,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%选择题智能排版
+%      用法: \choice{ }{ }{ }{ }
+
+
+\newcommand{\fourch}[4]{(\qquad)\\
+\begin{tabular}{*{4}{@{}p{0.21\textwidth}}}A.~#1 & B.~#2 & C.~#3 & D.~#4\end{tabular}}
+\newcommand{\twoch}[4]{(\qquad)\\
+\begin{tabular}{*{2}{@{}p{0.42\textwidth}}}A.~#1 & B.~#2\end{tabular}\\
+\begin{tabular}{*{2}{@{}p{0.42\textwidth}}}C.~#3 & D.~#4\end{tabular}}
+\newcommand{\onech}[4]{(\qquad)\\  A.~#1 \\ B.~#2 \\ C.~#3 \\ D.~#4}
+
+%\usepackage{ifthen}
+%\newlength\widthcha
+%\newlength\widthchb
+%\newlength\widthchc
+%\newlength\widthchd
+%\newlength\widthch
+%\newlength\tabmaxwidth
+%\setlength\tabmaxwidth{0.96\textwidth}
+%\newlength\fourthtabwidth
+%\setlength\fourthtabwidth{0.25\textwidth}
+%\newlength\halftabwidth
+%\setlength\halftabwidth{0.5\textwidth}
+%
+%%\newcommand{\kh}{(\rule{0.8cm}{0pt})}
+%\newcommand{\choice}[4]{\settowidth\widthcha{AM.#1}\setlength{\widthch}{\widthcha}
+%                        \settowidth\widthchb{BM.#2}
+%                        \ifthenelse{\widthch<\widthchb}{\setlength{\widthch}{\widthchb}}{}
+%                        \settowidth\widthchb{CM.#3}
+%                        \ifthenelse{\widthch<\widthchb}{\setlength{\widthch}{\widthchb}}{}
+%                        \settowidth\widthchb{DM.#4}
+%                        \ifthenelse{\widthch<\widthchb}{\setlength{\widthch}{\widthchb}}{}
+%                        \ifthenelse{\widthch<\fourthtabwidth}{\fourch{#1}{#2}{#3}{#4}}
+%                                   {\ifthenelse{\widthch<\halftabwidth\and\widthch>\fourthtabwidth}{\twoch{#1}{#2}{#3}{#4}}
+%                                   {\onech{#1}{#2}{#3}{#4}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\hypersetup{
+pdftitle={海淀区高三年级第二学期期末练习数学（理科）2013.05},
+pdfauthor={iC@tS},
+pdfsubject={2013年5月高三二模},
+pdfkeywords={2013年高考数学模拟},
+}
+\begin{document}
+
+\begin{center}
+ {\Heiti \zihao{4}\ziju{0.3} 海淀区高三年级第二学期期末练习}\par {\Heiti \zihao{3} 数\qquad 学 \ （理科）}\par \hfill 2013.05
+\end{center}
+%\par \emph{学校\hrulefill \ 班级\hrulefill \ 姓名\hrulefill \ 成绩\hrulefill}
+\begin{center}\emph{本试卷共\emph{150}分，考试时间\emph{120} 分钟}\end{center}
+
+
+\begin{itemize}
+\item[\Heiti 一.] {\Heiti 选择题: 本大题共8小题，每小题5分，共40 分．在每小题列出的四个选项中，选出符合题目要求的一项}
+
+
+\begin{enumerate}[leftmargin=*]
+
+\item 集合$A=\{x|(x-1)(x+2)\le 0\},B=\{x|x<0\}$，则$A\cup B$ 的值为
+  \fourch{$(-\infty,0]$}{$(-\infty,1]$}{[1,2]}{$[1,\infty]$}
+
+\item 已知数列$\{a_n\}$是公比为$q$的等比数列，且$a_1\cdot a_3=4,a_4=8$，则$a_1+q$的值为
+  \fourch{3} {2} {3或$-2$} {3或$-3$}
+
+\item  如图1，在边长为$a$的正方形内有不规则图形$\Omega$． 向正方形内随机撒豆子，若撒在图形$\Omega$内和正方形内的豆子数分别为$m,n$，则图形$\Omega$ 面积的估计值为
+  \fourch{$\dfrac {ma}n$}{$\dfrac {na}m$}{$\dfrac {ma^2}n$}{$\dfrac {na^2}m$}
+
+  \begin{tikzpicture}[line width=0.75]
+  \draw (0,0)(-1.2,-1.5);%应该有坐标变换，估计只有偶iC才这么调整版面吧，哈哈
+  \draw (0,0) rectangle (3,3);
+\draw[fill=gray,rounded corners=5pt](0.9,0.35)--(1.8,0.9)--(2.3,1)--(2.35,1.8)--(2.2,2.4)--(1.35,1.8)--(.5,2)--(0.8,1.2)--(1.2,1.2)--cycle;
+\node at (1.5,1.5)[fill=white]{$\Omega$};
+\node at (1.5,0)[below=1pt]{图1};
+  \end{tikzpicture}
+  \hfill
+ \begin{tikzpicture}[line width=0.75,scale=1.5]
+  \draw  (0,0) --(1,0)--(1,1)--(0,1)--(0,0)--(1,1)(1,0)--(0,1);
+  \draw[very thin] (1,0)--(1.2,0)[yshift=1cm] (1,0)--(1.2,0)[xshift=1.5cm,yshift=1.5cm] (1,0)--(1.2,0)[yshift=-1cm] (1,0)--(1.2,0);
+  \draw[very thin] (0,1)--(0,1.2)[xshift=1cm](0,1)--(0,1.2);
+  \begin{scope}[->,very thin]
+  \draw (1.1,0.4)--(1.1,0.025);
+   \draw (1.1,0.6)--(1.1,0.975);
+ \draw (2.6,1.9)--(2.6,1.525);
+ \draw (2.6,2.1)--(2.6,2.475);
+  \draw (0.4,1.1)--(0.025,1.1);
+ \draw (0.6,1.1)--(0.975,1.1);
+ \node at (0.5,1.1) {6};
+  \node at (1.1,0.5) {6};
+  \node at (2.6,2) {6};
+  \end{scope}
+  \node at (0.5,0) [below]{\zihao{-5}俯视图};
+  \node at (2,1.5) [below]{\zihao{-5}左视图};
+  \node at (0.5,1.5) [below]{\zihao{-5}主视图};
+  \draw (0,1.5)--(1,1.5)--(1,2.5)--(0,2.5)--(0,1.5)(0,2.5)--(0.5,3.17)--(1,2.5)[xshift=1.5cm](0,1.5)--(1,1.5)--(1,2.5)--(0,2.5)--(0,1.5)(0,2.5)--(0.5,3.17)--(1,2.5);
+  %开始画标记长5
+    \coordinate (a) at (1,2.5);
+    \coordinate (b) at (0.5,3.17);
+  \coordinate (c) at ($ (a)!0.2! -90:(b) $);
+  \coordinate (d) at ($ (b)!0.2! 90:(a) $);
+     \coordinate (c1) at ($ (a)!0.5!0:(c) $);
+     \coordinate (d1) at ($ (b)!0.5!0:(d) $);
+   \coordinate (e) at ($ (c1)!0.4! 0:(d1) $);
+   \coordinate (f) at ($ (c1)!0.6! 0:(d1) $);
+      \coordinate (m) at ($ (c1)!0.5! 0:(d1) $);
+   \draw[very thin] (a)--(c);
+   \draw[very thin] (b)--(d);
+   \begin{scope}[->,very thin]
+   \draw (e)--(c1);
+   \draw (f)--(d1);
+   \end{scope}
+  \node  at (m){5};
+    %画标记长5结束
+    \node at (1.25,-0.2)[below=1pt]{图2} ;
+  \end{tikzpicture}
+
+\item 某空间几何体的三视图如图2所示，则该几何体的表面积为
+  \fourch{180}{240}{276}{300}
+
+
+
+\item 在四边形$ABCD$中，“$\exists \  \lambda\in \mathbb{R}$，使得$\vv {AB}=\lambda \vv {DC},\vv {AD}=\lambda \vv {BC}$”是“四边形$ABCD$为平行四边形”的
+\twoch{充分而不必要条件}{必要而不充分条件}{充分必要条件}{既不充分也不必要条件}
+
+
+\item 用数学1，2，3，4，5组成没有重复数字的五位数，且5不排在百位，2，4都不排在个位和万位，则这样的五位数的个数为
+\fourch{32} {36} {42} {48}
+
+
+
+
+\item 双曲线$C$的左右焦点分别为$F_1,F_2$，且$F_2$恰好为抛物线$y^2=4x$的焦点，设双曲线$C$与该抛物线的一个交点为$A$，若$\triangle AF_1F_2$是以$AF_1$为底边的等腰三角形，则双曲线$C$的离心率为
+    \fourch{$\sqrt 2$}{$1+\sqrt 2$}{$1+\sqrt 3$}{$2+\sqrt 3$}
+
+
+
+\item 若数列$\{a_n\}$满足：存在正整数$T$，对任意正整数$n$ 都有$a_{n+T}=a_n$成立，则称数列$\{a_n\}$为周期数列，周期为$T$．已知数列$\{a_n\}$满足$a_1=m(m>0), a_{n+1}=\left\{\linespread{1}\selectfont\begin{aligned}
+  &a_n-1,&a_n>1,\\&\dfrac 1{a_n},&0<a_n\le 1.\end{aligned}\right.$
+
+  则下列结论中\emph{错误}的是
+\onech{若$a_3=4$，则$m$可以取3个不同的值}{若$m=\sqrt 2$，则数列$\{a_n\}$是周期为3 的数列}{$\forall\  T\in \mathbb{N}^*$且$T\ge 2,\exists \  m>1$，使得$\{a_n\}$是周期为$T$ 的数列}{$\exists \  m \in \mathbb{Q}$且$m\ge 2$，使得数列$\{a_n\}$是周期数列}
+
+\end{enumerate}
+\end{itemize}
+
+
+\begin{itemize}
+\item[\Heiti 二.] {\Heiti  填空题：本大题共6小题，第小题5分，共30分．把答案填在题中横线上}
+
+
+\linespread{2}\selectfont\begin{enumerate}[leftmargin=*]\addtocounter{enumi}{8}
+
+\item 在极坐标系中，极点到直线$\rho \cos \theta =2$的距离为\hhh．
+
+\item 已知$a=\ln \dfrac 12,b=\sin \dfrac 12 ,c=2^{-\frac 12}$，则$a,b,c$ 按从\emph{大到小}排列为\hhh．
+
+\item 直线$l_1$过点$(-2,0)$且倾斜角为$30^\circ$， 直线$l_2$过点$(2,0)$且与直线$l_1$ 垂直，则直线$l_1$与$l_2$的交点坐标为\hhh．
+
+
+\item 在$\triangle ABC$中，$\angle A=30^\circ,\angle B= 45^\circ,a=\sqrt 2$，则$b=$\hhh，$S_{\triangle ABC =}$\hhh．
+
+\item 在正方体$ABCD-A_1B_1C_1D_1$ 的棱长为1，若动点$P$在线段$BD_1$上运动，则$\vv {DC}\cdot \vv {AP}$ 的取值范围是\hhh.
+
+
+\item 在平面 直角坐标系中，动点$P(x,y)$到两条坐标轴的距离之和等于它到点$(1,1)$的距离，记点$P$的轨迹为曲线$W$．\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+              \item 给出下列三个结论：
+
+                    \cmcirc{1}曲线$W$关于原点对称；
+
+                    \cmcirc{2}曲线$W$关于直线$y=x$对称；
+
+                    \cmcirc{3}曲线$W$与$x$轴非负半轴，$y$轴非负半轴围成的封闭图形的面积小于$\dfrac 12$．\end{enumerate}
+
+                                          其中，所有正确结论的序号是\hhh．
+                                          \begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]\addtocounter{enumii}{1}
+
+                      \item 曲线$W$上的点到原点距离的最小值为\hhh．\end{enumerate}
+
+\end{enumerate}
+\end{itemize}
+
+
+\begin{itemize}
+\item[\Heiti 三.]{\Heiti 解答题，本大题共6小题，共80分．解答应写出文字说明，证明过程或演算步骤}
+
+\begin{enumerate}[leftmargin=*]\addtocounter{enumi}{14}
+
+\item （本小题共13分）
+
+已知函数$f(x)=1-\dfrac {\cos 2x}{\sqrt2\sin(x- \dfrac\uppi4) }$．
+\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+                   \item 求函数$f(x)$的定义域；
+                   \item 求函数数$f(x)$的单调递增区间．
+               \end{enumerate}
+
+
+
+
+
+
+\item （本小题共13分）
+
+
+福利中心发行彩票的目的是为了获取资金资助福利事业，现在福彩中心准备发行一种面值为5元的福利彩票刮刮卡，设计方案如下：（1）该福利彩票中奖率为$50\%$；（2）每张中奖彩票的中奖金有5元，50元和150 元三种；（3）顾客购买一张彩票获得150元奖金的概率为$p$，获得50元奖金的概率为$2\%$．\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+                   \item 假设某顾客一次花10元购买两张彩票，求其至少有一张彩票中奖的概率；
+                   \item 为了能够筹得资金资助福利事业，求$p$的取值范围． \end{enumerate}
+
+
+
+\bigskip\bigskip\bigskip
+
+
+\item （本小题共14分）
+
+如图3，在直角梯形$ABCD$中，$\angle ABC=\angle DAB=90^\circ,\angle CAB=30^\circ ,BC=2,AD=4$．把$\triangle DAC$沿对角线$AC$折起到$\triangle PAC$位置，如图4所示，使得点$P$ 落在平面$ABC$上的正投影$H$恰好落在线段$AC$上，连接$PB$，点$E,F$分别为线段$PA,AB$的中点．\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+    \item 求证：平面$EFH\sslash $平面$PBC $；
+    \item 求直线$HE$与平面$PHB$所成角的正弦值；
+    \item 在棱$PA$上是否存在一点$M$，使得$M$到$P,H,A,F$四点的距离相等？请说明理由．\end{enumerate}
+
+
+\begin{center}
+ \begin{tikzpicture}[line width=0.75,scale=2.5]
+      \coordinate (A) at (0, 0);
+         \coordinate (B) at (1, 0);
+           \coordinate (C) at (1, 0.58);
+             \coordinate (D) at (0, 1.16);
+            \node  at (A)[left]{$A$};
+         \node  at (B)[right]{$B$};
+      \node  at (C)[right]{$C$};
+   \node at (D)[left]{$D$};
+  \draw (A)--(B)--(C)--(D)--(A)--(C);
+   \node at (0.5,-0.2)[below=1pt]{图3};
+   \end{tikzpicture}
+   \qquad\qquad
+    \begin{tikzpicture}[line width=0.75,scale=2.5,xscale=1.5]
+      \coordinate (A) at (-0.5, 0.5);
+         \coordinate (B) at (0.1,0);
+           \coordinate (C) at (0.5,0.5);
+              \coordinate (P) at (0, 1.5);
+                 \coordinate (E) at (-0.25, 1);
+                   \coordinate (F) at (-0.2,0.25);
+                   \coordinate (H) at (0, 0.5);
+                \node  at (A)[left]{$A$};
+              \node  at (B)[below]{$B$};
+           \node  at (C)[right]{$C$};
+         \node  at (E)[above left]{$E$};
+       \node  at (P)[above]{$P$};
+     \node  at (F)[below left=0.5pt]{$F$};
+  \node at (H)[above right=2.8pt]{$H$};
+  \draw (A)--(B)--(C)--(P)--(A)(B)--(P)(E)--(F);
+  \draw [dashed](A)--(C)(P)--(H)--(B)(H)--(E)(H)--(F);
+  \node at (0,-0.2)[below=1pt]{图4};
+   \end{tikzpicture}
+\end{center}
+
+\bigskip\bigskip\bigskip\bigskip
+
+\item （本小题共13分）
+
+已知函数$f(x)=\mathrm{e}^x,A(a,0)$为一定点．直线$x=t(t\ne a)$ 分别与函数$f(x)$的图象和$x$轴交于点$M,N$，记$\triangle AMN$ 的面积为$S(t)$．\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+    \item 当$a=0$时，求函数$S(t)$的单调区间；
+    \item 当$a>2$时，若$\exists \ t_0\in [0,2] $，使得$S(t_0)\ge \mathrm{e}$，求$a$的取值范围．\end{enumerate}
+
+
+
+\bigskip\bigskip\bigskip\bigskip
+
+\item （本小题共14分）
+
+已知椭圆$M:\dfrac {x^2}{a^2}+\dfrac {y^2}{b^2}=1(a>b>0)$的四个顶点恰好是一边长为2，一个内角为$60^\circ$的菱形的四个顶点．
+\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+\item 求椭圆$M$的方程；
+\item 直线$l$与椭圆$M$交于$A,B$两点，且线段$AB$的垂直平分线经过点$(0,-\dfrac 12)$，求$\triangle AOB$ ($ O$ 为原点) 面积的最大值．\end{enumerate}
+
+
+\bigskip\bigskip\bigskip\bigskip
+
+\item （本小题共13分）
+
+设$A$是由$m\times n$个实数组成的$m$行$n$列的数表，如果某一行（或某一列）各数之和为负数，则改变（或该列）中所有数的符号，称为一次“操作”．
+\begin{enumerate}[align=left,leftmargin=*,labelsep=0pt,label= \hspace{-0.33em} （\Roman*）]
+\item 数表$A$如表1所示，若经过两次“操作”，使得到的数每行的各数之和与每列的各数之和均为非负实数，请写出每次“操作”后所得到的数表（写出一种方法即可）；
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+  \hline
+             1           &    2         & 3     &$-7$ \\
+  \hline
+             $-2$    &     1         &0	     &1 \\
+  \hline
+\end{tabular}
+
+  表1
+\end{center}
+
+\item 数表$A$如表2所示，若必须经过两次“操作”，才可使得到的数表每行的各数之和与每列各数之和均为非负整数，求\emph{整数}$a$的所有可能值；
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+  \hline
+             $a$          &   $a^2-1$         & $-a$     &$-a^2$ \\
+  \hline
+             $2-a$          &   $1-a^2$         & $a-2$     &$a^2$ \\
+  \hline
+\end{tabular}
+
+  表2
+\end{center}
+
+\item 对由$m\times n$个实数组成的$m$行$n$列的任意一个数表$A$，能否经过有限次“操作”以后，使得到的数表每行各数之和与每列各数之和均为非负实数？请说明理由．\end{enumerate}
+
+
+
+\end{enumerate}
+
+\end{itemize}
+
+\end{document}

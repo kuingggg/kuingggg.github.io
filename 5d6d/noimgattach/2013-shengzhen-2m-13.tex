@@ -1,0 +1,25 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}             %A4纸张，页边距均为2cm
+\usepackage{amsmath,amssymb,amsthm}    %最常用的数学宏包
+\renewcommand{\baselinestretch}{1.5}         %行距
+\usepackage{tikz}
+\usepackage{picinpar}
+\begin{document}
+
+2013年深圳高三数学理科二模第13题
+\bigskip
+
+\begin{window}[0,r,{\begin{tikzpicture}
+  \draw[line width=1pt,step=1] (0,0) grid (3,3) ;
+  \draw[line width=0.75] (.5,.5) circle(.2);
+  \draw[line width=0.75] (2.5,2.5)+(90:.22)--+(126:.084)--+(162:.22)--+(198:.084)--+(234:.22)--
+                                                                   +(270:.084)--+(306:.22)--+(342:.084)--+(378:.22)--+(414:.084)--cycle;
+  \draw[dashed,line width=1](.8,.5)--(2.5,.5)--(2.5,1.5)--(1.5,1.5)--(1.5,2.5);
+  \draw[>=stealth][dashed,line width=1,->](1.5,2.5)--(2.25,2.5);
+\end{tikzpicture}},{}] 题：在$n\times n$的方格中进行跳棋游戏。规定每跳一步只能向左，或向右，或向上，不能向下，且一次连续行走的路径中不能重复经过同一小方格。设$f(n)$表示从从左下角“$\bigcirc$”位置开始，连续跳到右上角“\begin{tikzpicture} [scale=0.75] \draw (0,0)+(90:.22)--+(126:.084)--+(162:.22)--+(198:.084)--+(234:.22)--+(270:.084)--+(306:.22)--+(342:.084)--+(378:.22)--+(414:.084)--cycle;
+\end{tikzpicture}”位置结束的所有不同路径的条数。如图，给出了$n=3$的一条路径。则$f(3)=$\underline{\hbox to 15mm{}}；$f(n)=$\underline{\hbox to 15mm{}}。
+\end{window}
+
+
+
+\end{document}
