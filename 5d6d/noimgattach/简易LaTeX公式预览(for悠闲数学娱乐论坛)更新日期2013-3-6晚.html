@@ -1,0 +1,128 @@
+<html>
+<head>
+
+<title>简易LaTeX公式预览(via MathJax,for悠闲数学娱乐论坛)</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+<style type="text/css">
+#inputWrap{float:left;width:38%;margin-bottom:20px}
+#inputText{font-family:"Courier New", Courier, monospace;background:#ffffef;width:100%;font-size:1em}
+#outputWrap{width:61%;float:right;margin-bottom:20px}
+#output{padding:6px;border:solid 1px #ccc;font-size:1.2em;-moz-border-radius:5px;border-radius:5px}
+</style>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true  
+    },
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      Macros: {
+        mbb: '\\mathbb',
+        riff: '\\implies',
+        liff: '\\impliedby',
+        abs: ['\\left\\lvert #1\\right\\rvert', 1],
+        rmd: ['\\mathop{\\mathrm{d}#1}', 1],
+        vv: '\\overrightarrow',
+        sslash: '\\mathrel{/\\!/}',
+        pqd: '\\stackrel{\\,\\sslash}{\\raise-.5ex{=\\!\\!\\!\\!=}}',
+        veps: '\\varepsilon',
+        du: '^\\circ'
+      }
+    },
+    "HTML-CSS": {
+      linebreaks: {automatic: true}
+    },
+      menuSettings: {
+        zoom: "Double-Click"
+    }
+  });
+</script>
+
+<script type="text/javascript"
+  src="http://c328740.r40.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+
+<div id="inputWrap"> 
+  
+<h2>在这里输入公式代码及文字</h2>
+  
+<textarea id="inputText" rows="20">
+例：
+行内公式：$c=\sqrt{a^2+b^2}$
+行间公式：\[c=\sqrt{a^2+b^2}\]
+align*环境：
+\begin{align*}
+f(x)&=ax^2+bx+c\\
+&=a(x-x_1)(x-x_2)\\
+&=\cdots
+\end{align*}
+</textarea>
+
+<p>帮助链接：</p>
+<ul>
+<li><a href="http://kkkkuingggg.5d6d.net/thread-9-1-1.html" target=_blank>基本输入方法及常用代码列表等</a></li>
+<li><a href="http://kkkkuingggg.5d6d.net/thread-1030-1-1.html" target=_blank>这里可以使用的自定义命令列表</a></li>
+</ul>
+
+<p>注意事项：</p>
+<ul>
+<li>如用IE打开，可能会有安全性提示，显示限制了脚本，此时请单击提示条并点击允许；</li>
+<li>生成公式需要加载MathJax，故必需联网；</li>
+<li>预览效果有时可能会与实际回贴效果有小许出入，例如公式编号错乱以及空格等问题；（还不知怎么解决，因为关键代码有部分是抄来的）</li>
+<li>如有任何问题请到<a href="http://kkkkuingggg.5d6d.net/thread-1204-1-1.html" target=_blank>这里</a>留言；</li>
+</ul>
+
+<p>更新日期：2013-3-6 晚</p>
+
+<p><a href="http://kkkkuingggg.5d6d.net" target=_blank>悠闲数学娱乐论坛</a> kuing</p>
+
+</div> 
+
+<div id="outputWrap">
+   <h2>即时预览效果</h2>
+  <div id="output"></div>
+</div>
+
+
+<script type="text/javascript">
+
+function doPreview() {
+      var fdsa = document.getElementById("inputText").value;
+      var asdf = "";
+      for (var i = 0; i < fdsa.length; i++) {
+	switch(fdsa.charCodeAt(i))
+	{
+	case 10:
+	  asdf += "<br>";
+	  break;
+	case 13:
+	  asdf += "<br>";
+	  break;
+	case 60:
+	  asdf += "&lt;";
+	  break;
+	case 62:
+	  asdf += "&gt;";
+	  break;
+	default:
+	  asdf += fdsa.charAt(i);
+	}
+      }
+document.getElementById('output').innerHTML = asdf;
+MathJax.Hub.Queue(["Typeset",MathJax.Hub,"output"]);
+};
+
+window.onload = doPreview;
+inputText.onkeyup = doPreview;
+
+</script>
+
+
+</body>
+</html>

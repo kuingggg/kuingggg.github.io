@@ -1,0 +1,13 @@
+%!TEX TS-program = xelatex
+% !Mode:: "TeX:UTF-8"
+\documentclass{ctexart}
+\setCJKfamilyfont{caiy}{华文彩云}            %含下一行，即把华文彩云简化定义为命令 \cy
+\newcommand{\cy}{\CJKfamily{caiy}}
+
+\begin{document}
+
+注意：UTF-8编码，用XeLaTeX编译，调用系统字体，{\cy 这里示例为华文彩云}，或者写全了，{\CJKfamily{caiy}不怕麻烦的话}，看两处都是彩云。{\zihao{1} \heiti 把字调大还是黑}体。
+
+对就是这么简单！
+
+\end{document}

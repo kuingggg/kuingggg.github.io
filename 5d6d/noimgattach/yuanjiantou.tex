@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\newcommand\jtc{0.15} %箭头长度
+\newcommand\jtj{45} %箭头角度
+
+%\asdf{圆a半径}{圆a箭头数}{圆b半径}{圆b箭头数} 
+\newcommand\asdf[4]{\begin{tikzpicture}
+\draw (0,0) circle (#1);
+\foreach \x in {1,2,...,#2}
+\draw[rotate={\x*360/#2}] (#1,0)--+(\jtj:-\jtc) (#1,0)--+(-\jtj:\jtc);
+\draw (0,0) circle (#3);
+\foreach \x in {1,2,...,#4}
+\draw[rotate={\x*360/#4}] (#3,0)--+(\jtj:-\jtc) (#3,0)--+(-\jtj:\jtc);
+\end{tikzpicture}}
+
+\begin{document}
+\asdf{1}{5}{2}{10}
+
+\asdf{2}{5}{3}{10}
+
+\asdf{1.5}{5}{2}{20}
+\end{document}
