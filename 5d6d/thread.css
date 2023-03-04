@@ -252,7 +252,12 @@ th { font-weight: 400; }
   #header { min-width: unset; }
   .wrap, #nav, .forumnums, .forumlast { width: unset; }
   body { background: unset; }
-  #nav { background: rgb(13, 35, 69); }
+  #nav { 
+    background: rgb(13, 35, 69);
+    text-indent: unset;
+    line-height: unset;
+    padding: 5px;
+  }
   #wrap { border: 2pt solid rgb(13, 35, 69); }
   .mainbox td.postauthor {
     display: block;
