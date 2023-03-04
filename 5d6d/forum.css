@@ -131,3 +131,29 @@ thead .nums { color: rgb(68, 68, 68); }
 .search_form_keys strong { float: left; }
 .search_form_keys a { float: left; margin-right: 8px; color: rgb(0, 153, 204); white-space: nowrap; }
 .threadlist th .new { color: rgb(0, 153, 204); font-size: 9px; text-transform: uppercase; white-space: nowrap; }
+
+@media screen and (orientation: portrait) {
+  .channelinfo, #modedby, .folder { display: none; }
+  #header { min-width: unset; }
+  .wrap, #nav, .forumnums, .forumlast { width: unset; }
+  .content { padding: 0px; }
+  .author, .lastpost {
+    max-width: 60px;
+    white-space: nowrap;
+    font-size: 12px;
+    overflow: hidden;
+  }
+  .nums {
+    max-width: 35px;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .nums em { display: block; }
+  .nums, .nums em { text-align: center; }
+  .nums strong, .nums em { padding: 0; }
+  .author cite, .lastpost cite {
+    width: unset;
+    overflow: unset;
+  }
+}
