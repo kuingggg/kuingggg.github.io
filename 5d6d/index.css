@@ -89,7 +89,7 @@ th { font-weight: 400; }
   #onlinelist dt, .list th h2 em, .list th p:last-child { display: none; }
   #header { min-width: unset; }
   .wrap, #nav, .forumnums, .forumlast { width: unset; }
-  .content { padding: 10px; }
+  .content { padding: 0px; }
   .narrowlist th {
     display: inline-block;
     width: 50%;
