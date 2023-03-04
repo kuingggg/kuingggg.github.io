@@ -27,7 +27,7 @@ table { empty-cells: show; border-collapse: collapse; }
 #wrap { padding-bottom: 10px; min-height: 450px; border: 0pt solid rgb(0, 178, 232); background-color: rgb(255, 255, 255); clear: both; }
 .wrap, #nav { width: 1024px; }
 #header { margin-bottom: 8px; min-width: 1024px; width: 100%; border-bottom: 1px solid rgb(0, 178, 232); background: /*url('header.gif') repeat-x scroll 0pt 100%*/ rgb(0, 162, 210); }
-#header .wrap { position: relative; padding: 36px 0pt 22px; }
+#header .wrap { position: relative; padding: 5px; }
 #header h2 { float: left; }
 #umenu { position: absolute; right: 0pt; top: 0pt; line-height: 20px; z-index: 9; }
 #umenu a { margin: 0pt 6px; }
@@ -154,7 +154,7 @@ table { empty-cells: show; border-collapse: collapse; }
 .postmessage strong { font-weight: bold; }
 .postmessage em { color: rgb(102, 102, 102); }
 .t_msgfontfix table, .specialmsg table { margin-left: 1px; }
-.postattachlist { width: 100%; margin-top: 2em; border-bottom: 1px dashed rgb(230, 231, 225) ! important; overflow: hidden; font-size: 12px; }
+.postattachlist { width: 100%; margin-top: 2em; border-bottom: 1px dashed rgb(230, 231, 225) ! important; /*overflow: hidden;*/ font-size: 12px; }
 .t_attachlist { float: left; width: 45%; height: 50px; overflow: hidden; padding: 10px; }
 .t_attachlist a { color: rgb(0, 153, 204); text-decoration: underline; }
 .t_attachlist dt { width: 40px; float: left; font-weight: 700; }
@@ -246,3 +246,29 @@ th { font-weight: 400; }
 .showmessage h1 { height: 30px; line-height: 30px; font-size: 18px; color: rgb(0, 153, 204); }
 .showmessage p { line-height: 24px; font-size: 14px; }
 .showmessage a { color: rgb(0, 153, 204); text-decoration: underline; font-weight: 700; }
+
+@media screen and (orientation: portrait) {
+  .headsearch, .forumcontrol, .adcontent { display: none; }
+  #header { min-width: unset; }
+  .wrap, #nav, .forumnums, .forumlast { width: unset; }
+  body { background: unset; }
+  #nav { background: rgb(13, 35, 69); }
+  #wrap { border: 2pt solid rgb(13, 35, 69); }
+  .mainbox td.postauthor {
+    display: block;
+    width: 100%;
+  }
+  .postauthor * { display: inline; }
+  .postauthor p, .postauthor dl.profile { margin: 0; }
+  .postauthor dd, .postauthor dt { float: unset; }
+  .avatar img {
+    max-height: 30px;
+    vertical-align: middle;
+  }
+  .viewthread td.postcontent {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .authorinfo { width: unset; }
+}
