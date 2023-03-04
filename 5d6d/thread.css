@@ -194,7 +194,7 @@ table { empty-cells: show; border-collapse: collapse; }
 .search_form_keys { padding-left: 20px; height: 28px; line-height: 28px; overflow: hidden; }
 .search_form_keys strong { float: left; }
 .search_form_keys a { float: left; margin-right: 8px; color: rgb(0, 153, 204); white-space: nowrap; }
-.headsearch { padding: 10px; border-bottom: 1px solid rgb(230, 231, 225); }
+.headsearch { display: none; }
 .search_form { height: 28px; }
 .share_zone { padding: 5px 0pt; }
 .share_qzone, .share_tweibo, .share_pengyou { padding: 5px 10px 5px 25px; }
