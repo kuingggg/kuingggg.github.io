@@ -138,12 +138,14 @@ thead .nums { color: rgb(68, 68, 68); }
   .wrap, #nav, .forumnums, .forumlast { width: unset; }
   .content { padding: 0px; }
   .author, .lastpost {
+    width: 60px;
     max-width: 60px;
     white-space: nowrap;
     font-size: 12px;
     overflow: hidden;
   }
   .nums {
+    width: 35px;
     max-width: 35px;
     white-space: nowrap;
     font-size: 12px;
