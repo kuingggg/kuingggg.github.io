@@ -24,7 +24,7 @@ th { font-weight: 400; }
 #wrap { padding-bottom: 10px; min-height: 450px; border: 0pt solid rgb(0, 178, 232); background-color: rgb(255, 255, 255); clear: both; }
 .wrap, #nav { width: 1024px; }
 #header { margin-bottom: 8px; min-width: 1024px; width: 100%; border-bottom: 1px solid rgb(0, 178, 232); background: /*url('header.gif') repeat-x scroll 0pt 100%*/ rgb(0, 162, 210); }
-#header .wrap { position: relative; padding: 36px 0pt 22px; }
+#header .wrap { position: relative; padding: 5px; }
 #header h2 { float: left; }
 #umenu { position: absolute; right: 0pt; top: 0pt; line-height: 20px; z-index: 9; }
 #umenu a { margin: 0pt 6px; }
