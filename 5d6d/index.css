@@ -84,3 +84,22 @@ th { font-weight: 400; }
 .foruminfo { padding: 2px 5px; line-height: 30px; border-style: solid; border-color: rgb(230, 231, 225); background: none repeat scroll 0% 0% rgb(247, 247, 247); border-width: 1px 0pt; }
 .forumcount { margin-right: 16px; margin-top: 2px; }
 .headsearch { margin-top: 10px; }
+
+@media screen and (orientation: portrait) {
+  #header { min-width: unset; }
+  .wrap, #nav, .forumnums, .forumlast { width: unset; }
+  .narrowlist th {
+    display: inline-block;
+    width: unset;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+  .list th { padding-left: unset !important; }
+  .list td, .list th {
+    height: unset;
+    padding: unset;
+  }
+  .content .list h3 { line-height: unset; }
+  #onlinelist dt { display: none; }
+  #onlinelist dd ul li { width: 25%; }
+}
