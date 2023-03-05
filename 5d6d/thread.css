@@ -248,7 +248,7 @@ th { font-weight: 400; }
 .showmessage a { color: rgb(0, 153, 204); text-decoration: underline; font-weight: 700; }
 
 @media screen and (orientation: portrait) {
-  .headsearch, .forumcontrol, .adcontent { display: none; }
+  .headsearch, .modaction, .adcontent { display: none; }
   #header { min-width: unset; }
   .wrap, #nav, .forumnums, .forumlast { width: unset; }
   body { background: unset; }
@@ -258,6 +258,7 @@ th { font-weight: 400; }
     line-height: unset;
     padding: 5px;
   }
+  .forumcontrol td { padding: 5px; }
   #wrap { border: 2pt solid rgb(13, 35, 69); }
   .mainbox td.postauthor {
     display: block;
