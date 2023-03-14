@@ -24,7 +24,7 @@
 	      
 	<p>得闲无事整黎玩下</p>
 
-	<ul id="ml"></ul>
+	<div id="ml">目录</div>
 
         <p>本页面更新于<br />2023-2-23</p>
 
@@ -225,6 +225,8 @@
   </tbody>
 </table>
 
+<div id="for_ml_end"></div>
+
 <hr />
         
 <p>测试 Mathjax：设 $x_{ij}$, $p_j>0$, $p_1+p_2+\cdots+p_m=1$，则
@@ -237,7 +239,81 @@
       </section>
 
     </div>
-    
+
+
+<!--目录设计-->
+<style>
+.mlh2:before,.mlh3:before {
+    content: "\2514";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.mlh2 { margin-left: 1em; }
+.mlh3 { margin-left: 2em; }
+.mlcur { font-weight: 700; color: green; }
+</style>
+<script>
+//任意元素与页面顶部及左边的距离，抄网上的
+function offSet(curEle) {
+    var totalLeft = null;
+    var totalTop = null;
+    var par = curEle.offsetParent;
+    //首先把自己本身的相加
+    totalLeft += curEle.offsetLeft;
+    totalTop += curEle.offsetTop;
+    //现在开始一级一级往上查找，只要没有遇到body，我们就把父级参照物的边框和偏移相加
+    while (par) {
+        if (navigator.userAgent.indexOf("MSIE 8.0") === -1) {
+            //不是IE8我们才进行累加父级参照物的边框
+            totalTop += par.clientTop;
+            totalLeft += par.clientLeft;
+        }
+        //把父级参照物的偏移相加
+        totalTop += par.offsetTop;
+        totalLeft += par.offsetLeft;
+        par = par.offsetParent;
+    }
+    return {
+        left: totalLeft,
+        top: totalTop
+    };
+    //返回一个数组，方便我们使用哦。
+}
+var ml = document.getElementById('ml');
+var h23s = document.querySelectorAll('h2,h3');
+for (let i = 0; i < h23s.length; i++) {
+    var theid = h23s[i].id;
+    if (h23s[i].nodeName == 'H2') {
+        ml.innerHTML += `<div class="mlh2"><a href="#${theid}" id="a${i}" target="_self">${h23s[i].innerText}</a></div>`;
+    } else if (h23s[i].nodeName == 'H3') {
+        ml.innerHTML += `<div class="mlh3"><a href="#${theid}" id="a${i}" target="_self">${h23s[i].innerText}</a></div>`;
+    }
+}
+let arr = [];
+for (let i = 0; i < h23s.length; i++) {
+    arr.push(offSet(h23s[i]).top);
+}
+arr.push(offSet(document.getElementById('for_ml_end')).top); //兜底
+function mlgl() {
+    let slTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+    for (let i = 0; i < arr.length - 1; i++) {
+        let d1 = 0.5*window.innerHeight; //进入线
+        let d2 = 200; //出去线
+        if (slTop + d1 >= arr[i] && slTop + d2 <= arr[i + 1]) {
+            document.getElementById('a'+i).classList.add("mlcur");
+        } else {
+            document.getElementById('a'+i).classList.remove("mlcur");
+        }
+    }
+}
+//滚动监听
+window.addEventListener("scroll",mlgl);
+window.addEventListener("load",mlgl);
+</script>
+
+
+<!--
     <script>
     var h23s = document.querySelectorAll('h2,h3');
     //for (let item of h23s) {
@@ -272,6 +348,7 @@ for (let item of h23s) {
 }
 ml.innerHTML = str;
     </script>
+-->
     
     <script>
 (function(document) {
