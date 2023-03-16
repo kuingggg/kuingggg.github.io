@@ -16,4 +16,4 @@ function addsearch() {
     sch.style = "float:right; color:aliceblue; background-color:rgb(13,35,69); font-weight:700; font-size:1.5em; line-height:80px; padding: 0 1em;"
     hddiv.appendChild(sch);
 }
-window.addEventListener('load',addsearch)
+document.addEventListener('DOMContentLoaded',addsearch)
