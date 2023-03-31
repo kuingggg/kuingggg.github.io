@@ -9,11 +9,13 @@ document.getElementsByTagName("head")[0].appendChild(mee);
 
 function addsearch() {
     var hddiv = document.querySelector("#header > div");
-    var sch = document.createElement("a");
-    sch.href = "search.html";
-    sch.target = "_blank";
-    sch.innerHTML = "Search";
-    sch.style = "float:right; color:aliceblue; background-color:rgb(13,35,69); font-weight:700; font-size:1.5em; line-height:80px; padding: 0 1em;"
+    var sch = document.createElement("div");
+    sch.style = "float:right; color:aliceblue; background-color:rgb(13,35,69); font-size: 1.5em; font-weight:700;"
+    sch.innerHTML = `
+        <p style="text-align: center; margin-top: 5px;">Search:</p>
+        <a href="search.html" target="_blank" style="float: right; color: inherit; line-height: 30px; margin: 5px 0; padding: 0px 0.5em;">\u5168\u6587</a>
+        <a href="titles.html" target="_blank" style="float: right; color: inherit; line-height: 30px; margin: 5px 0; padding: 0px 0.5em; border-right: 2px solid;">\u6807\u9898</a>
+        `;
     hddiv.appendChild(sch);
 }
 document.addEventListener('DOMContentLoaded',addsearch)
