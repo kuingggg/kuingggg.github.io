@@ -1,5 +1,6 @@
 var jss = document.createElement("script");
-jss.src = "https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js";
+//jss.src = "https://unpkg.com/mathjax@3.2.2/es5/tex-svg.js";
+jss.src = "https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js";
 document.getElementsByTagName("head")[0].appendChild(jss);
 
 var mee = document.createElement("meta");
